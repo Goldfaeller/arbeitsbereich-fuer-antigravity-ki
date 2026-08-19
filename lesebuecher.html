@@ -1,0 +1,235 @@
+<!-- wp:html -->
+<style>
+    /* 1. WordPress-Hüllen und Systemabstände brutal auf 0 setzen */
+    html, body, main, 
+    .wp-site-blocks, 
+    .entry-content, 
+    .wp-block-post-content, 
+    .post-content,
+    article {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* 2. Kopf- und Fußzeilen komplett ausblenden */
+    .wp-block-post-title,
+    .entry-title,
+    header,
+    .site-header,
+    .wp-block-template-part,
+    .wp-block-navigation,
+    footer,
+    .site-footer,
+    .wp-block-template-part-footer {
+        display: none !important;
+    }
+
+    /* 3. Haupt-Container */
+    .pc-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* 4. Banner direkt an die Oberkante rücken */
+    .pc-banner {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: cover;
+        display: block;
+        border-bottom: 4px solid #34495e;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    /* 5. Überschrift & Untertitel */
+    .pc-container h1 {
+        font-size: 2.2rem;
+        margin: 0 0 6px 0;
+        color: #1a252f;
+        text-align: center;
+    }
+
+    .pc-subtitle {
+        font-size: 1rem;
+        color: #7f8c8d;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* 6. Buttons */
+    .chapter-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 18px;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.15s ease-in-out;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-sizing: border-box;
+    }
+
+    .btn-row-active {
+        background-color: #2980b9;
+        color: #ffffff !important;
+        box-shadow: 0 2px 4px rgba(41, 128, 185, 0.2);
+    }
+
+    .btn-row-active:hover {
+        background-color: #1c5980;
+        transform: translateX(3px);
+    }
+
+    .btn-row-disabled {
+        background-color: #f1f5f9;
+        color: #94a3b8 !important;
+        border: 1px solid #e2e8f0;
+        cursor: not-allowed;
+    }
+
+    .tag-status {
+        font-size: 0.75rem;
+        font-weight: normal;
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+
+    /* Auffälliger Hinweis: Inhaltsverzeichnis da, Kapiteltexte noch nicht */
+    .tag-leer {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #c0392b;
+        font-size: 1.05rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        padding: 1px 10px;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    /* Home-Link links unter dem Bild */
+    .pc-home-link {
+        text-align: left;
+        /* Zeile entfernt */
+        margin-bottom: 15px;
+    }
+
+    .pc-home-link a {
+        font-size: 1rem;
+        color: #7f8c8d;
+        text-decoration: none;
+    }
+
+    .pc-home-link a:hover {
+        color: #2980b9;
+    }
+
+
+
+</style>
+
+<div class="pc-container">
+    <!-- Panorama Header Bild -->
+    <img src="https://modjor.de/wp-content/uploads/2026/07/ChatGPT-Image-27.-Juli-2026-16_09_35-budapest-panorama-s-w.png" alt="Lesebücher Header" class="pc-banner">
+
+    <!-- Home-Rücksprung (linksbündig) -->
+    <div class="pc-home-link">
+        <a href="https://modjor.de/">« Home</a>
+    </div>
+
+    <!-- Titel & neuer Untertitel -->
+    <h1>Lesebücher</h1>
+    <p class="pc-subtitle">ungarisch-deutsch</p>
+
+    <div class="chapter-list">
+        <!-- BUTTON 1 -->
+        <a href="/anatomie-kurze-saetze/" class="btn-row btn-row-active">
+        <span>1 – Anatomie: Kurze Sätze</span>
+         <span class="tag-status">✓ Verfügbar</span>
+         </a>
+
+        <!-- BUTTON 2 -->
+        <a href="/inhalt-anatomie-lang/" class="btn-row btn-row-active">
+        <span>2 – Anatomie: Lange Sätze</span>
+        <span class="tag-status">✓ Verfügbar</span>
+       </a>
+      
+      
+
+        <!-- BUTTON 3 -->
+        <a href="/inhalt-physiologie-kurz/" class="btn-row btn-row-active">
+        <span>3 – Physiologie: Kurze Sätze</span>
+        <span class="tag-status"><span class="tag-leer">noch LEER</span>in Vorbereitung, coming soon</span>
+       </a>
+
+      
+      
+              <!-- BUTTON 4 -->
+        <a href="/inhalt-physiologie-lang/" class="btn-row btn-row-active">
+        <span>4 – Physiologie: Lange Sätze</span>
+        <span class="tag-status">✓ Verfügbar</span>
+       </a>
+      
+ 
+      
+        <!-- BUTTON 5 -->
+        <a href="/inhalt-literatur-kurz/" class="btn-row btn-row-active">
+        <span>5 – Literatur: Kurze Sätze</span>
+         <span class="tag-status">✓ Verfügbar</span>
+         </a>
+
+        <!-- BUTTON 6 -->
+        <a href="/inhalt-literatur-lang/" class="btn-row btn-row-active">
+        <span>6 – Literatur: Lange Sätze</span>
+        <span class="tag-status">✓ Verfügbar</span>
+       </a>
+      
+      
+      
+              <!-- BUTTON 7 BIS 20 -->
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>7 – Geschichte Ungarns: Kurze Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+      
+      
+        <!-- BUTTON 8 -->
+        <a href="/inhalt-geschichte-ungarns-lang/" class="btn-row btn-row-active">
+        <span>8 – Geschichte Ungarns: Lange Sätze</span>
+        <span class="tag-status">✓ Verfügbar</span>
+       </a>
+      
+      
+ 
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>9 – Philosophie: Kurze Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>10 – Philosophie: Lange Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>11 – Geografie Ungarns: Kurze Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>12 – Geografie Ungarns: Lange Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>13 – Die Sterne von Eger: Kurze Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>14 – Die Sterne von Eger: Lange Sätze</span><span class="tag-status">(In Vorbereitung)</span></a>
+      
+/* aaaaaa  WEITERE THEMEN IN PLANUNG  aaaaaaaaaa  */
+/* bbbbbb       Biologie, Informatik, Jura, Auto, Flugzeug, Fliegen, Sport; Meteorologie,Paläoanthropologie   */
+/* cccccc       Astronomie, Kosmologie, Geologie, Luftfahrt, Seefahrt, Raumfahrt */
+      
+      
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>15 – Kapitel 15</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>16 – Kapitel 16</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>17 – Kapitel 17</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>18 – Kapitel 18</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>19 – Kapitel 19</span><span class="tag-status">(In Vorbereitung)</span></a>
+        <a href="#" class="btn-row btn-row-disabled" onclick="return false;"><span>20 – Kapitel 20</span><span class="tag-status">(In Vorbereitung)</span></a>
+    </div>
+</div>
+<!-- /wp:html -->
