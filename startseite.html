@@ -1,0 +1,245 @@
+<p>alte Startseite</p>
+
+<!-- wp:html -->
+<style>
+    /* 1. WordPress-Hüllen und Systemabstände auf 0 setzen */
+    html, body, main, 
+    .wp-site-blocks, 
+    .entry-content, 
+    .wp-block-post-content, 
+    .post-content,
+    article {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* 2. Seitentitel "Startseite" sowie Kopf- und Fußzeile komplett ausblenden */
+    .wp-block-post-title,
+    .entry-title,
+    header,
+    .site-header,
+    .wp-block-template-part,
+    .wp-block-navigation,
+    footer,
+    .site-footer,
+    .wp-block-template-part-footer {
+        display: none !important;
+    }
+
+    /* 3. Haupt-Container für den PC */
+    .pc-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* 4. Das Budapest-Banner */
+    .pc-banner {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: cover;
+        display: block;
+        border-bottom: 4px solid #34495e;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    /* Überschrift & Erklärungen */
+    .pc-container h1 {
+        font-size: 2.2rem;
+        margin: 0 0 6px 0;
+        color: #1a252f;
+    }
+
+    .pc-subtitle {
+        font-size: 1.1rem;
+        color: #576574;
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+
+    .pc-domain {
+        font-size: 0.95rem;
+        color: #7f8c8d;
+        font-weight: 500;
+        display: block;
+        margin-top: 4px;
+    }
+
+    /* Die 4 Buttons untereinander */
+    .pc-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px 22px;
+        border-radius: 8px;
+        font-size: 1.15rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid transparent;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .btn-active {
+        background-color: #2980b9;
+        color: #ffffff !important;
+        box-shadow: 0 4px 6px rgba(41, 128, 185, 0.2);
+    }
+
+    .btn-active:hover {
+        background-color: #1c5980;
+    }
+
+    .btn-disabled {
+        background-color: #e2e8f0;
+        color: #94a3b8 !important;
+        border-color: #cbd5e1;
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+
+    .btn-status {
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 12px;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .btn-active .btn-status { color: #d0e7f9; }
+    .btn-disabled .btn-status { color: #94a3b8; }
+
+    /* für das Bild Eisenkatze */
+    .pc-content-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .pc-side-image {
+        flex: 1;
+        max-width: 260px;
+        text-align: center;
+    }
+
+    .pc-side-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        display: block;
+    }
+
+    .pc-side-image figcaption {
+        font-size: 1.1rem;
+        color: #576574;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+
+    .bildnachweis {
+        display: block;
+        font-size: 0.8rem;
+        color: #576574;
+        margin-top: 6px;
+        font-style: normal;
+    }
+
+    .bildnachweis a {
+        color: #576574;
+        text-decoration: underline;
+    }
+
+    /* Witz am Fußende */
+    .pc-joke {
+        margin-top: 80px;
+        padding-top: 15px;
+        border-top: 1px solid #e2e8f0;
+        font-size: 0.82rem;
+        color: #8898aa;
+        font-style: italic;
+        line-height: 1.4;
+    }
+</style>
+
+<div class="pc-container">
+    <!-- Budapest Header Bild -->
+    <img src="https://modjor.de/wp-content/uploads/2026/07/1-Budapest-3-color-Gemini_Generated_Image.png" alt="Budapest Banner" class="pc-banner">
+
+    <!-- Texte -->
+    <h1>Ungarisch lernen</h1>
+    <div class="pc-subtitle">
+        magyar [phonetisch: modjor] - ungarisch
+        <span class="pc-domain">modjor.de = ungarisch-lesebuch.de</span>
+    </div>
+
+    <!-- Buttons + Bild nebeneinander -->
+    <div class="pc-content-row">
+        <div class="pc-buttons">
+            <a href="https://modjor.de/lesebuecher/" class="btn btn-active">
+                Ungarisch-deutsch Lesebuch
+                <span class="btn-status">✓ Öffnen</span>
+            </a>
+
+            <a href="#" class="btn btn-disabled" onclick="return false;">
+                Ungarische Grammatik
+                <span class="btn-status">(In Vorbereitung)</span>
+            </a>
+
+            <a href="#" class="btn btn-disabled" onclick="return false;">
+                Lektionen
+                <span class="btn-status">(In Vorbereitung)</span>
+            </a>
+
+            <a href="#" class="btn btn-disabled" onclick="return false;">
+                Wortschatz
+                <span class="btn-status">(In Vorbereitung)</span>
+            </a>
+          
+          
+            <a href="/videos-beschreiben/" class="btn btn-active">
+                    Kurze Videos beschreiben
+             <span class="btn-status">✓ Öffnen</span>
+</a>
+</a>
+          
+          
+        </div>
+
+        <figure class="pc-side-image">
+            <img src="https://modjor.de/wp-content/uploads/2026/07/WP-Decrottoir_Collegiale_Notre-Dame_de_Poissy_Portail-1.jpg" alt="Vasmacska">
+            <figcaption>
+                vasmacska – Schuhabkratzer („Eisenkatze”)
+                <span class="bildnachweis">
+                    <a href="https://commons.wikimedia.org/wiki/File:D%C3%A9crottoir_Coll%C3%A9giale_Notre-Dame_de_Poissy_Portail.JPG">Wikimedia Commons</a> ·
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a> ·
+                    Hydrel · beschnitten
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+
+    <!-- Witz am Fußende -->
+    <div class="pc-joke">
+        Mitől fél legjobban egy öngyilkos merénylő? – Fél hogy egyedül hal meg.<br>
+        (Wovor hat ein Selbstmordattentäter am meisten Angst? – Er hat Angst, dass er alleine stirbt.) <br>
+        <a href="https://modjor.de/datenschutzerklaerung/">Datenschutzerklärung</a>
+    </div>
+ 
+</div>
+<!-- /wp:html -->
