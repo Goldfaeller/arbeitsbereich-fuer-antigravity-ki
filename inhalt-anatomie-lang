@@ -1,0 +1,709 @@
+<!-- wp:html -->
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+html, body, main, .wp-site-blocks, .entry-content,
+.wp-block-post-content, .post-content, article {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.wp-block-post-title, .entry-title, header, .site-header,
+.wp-block-template-part, .wp-block-navigation, footer,
+.site-footer, .wp-block-template-part-footer {
+    display: none !important;
+}
+
+.pc-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pc-banner {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 4px solid #34495e;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.pc-container h1 {
+    font-size: 2.2rem;
+    margin: 0 0 20px 0;
+    color: #1a252f;
+    text-align: left;
+}
+
+.pc-home-link {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.pc-home-link a {
+    font-size: 1rem;
+    color: #7f8c8d;
+    text-decoration: none;
+}
+
+.pc-home-link a:hover {
+    color: #2980b9;
+}
+
+.pc-content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.pc-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.pc-content h2 {
+    font-size: 1.4rem;
+    margin: 30px 0 10px 0;
+    color: #1a252f;
+}
+
+.pc-content h3 {
+    font-size: 1.15rem;
+    margin: 20px 0 8px 0;
+    color: #1a252f;
+}
+
+.double-line {
+    border-top: 3px double #34495e;
+    margin: 30px 0 20px 0;
+}
+</style>
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.pc-content p').forEach(function (zeile) {
+        const text = zeile.textContent.trim();
+        const kapitelnummer = text.match(/^(\d+(?:\.\d+)*)\s*[–-]/);
+
+        if (!kapitelnummer) {
+            return;
+        }
+
+        const ebene = kapitelnummer[1].split('.').length;
+
+        if (ebene === 1) {
+            // Hauptebene: Deutlich größer und kräftiger
+            zeile.style.setProperty('margin-left', '0', 'important');
+            zeile.style.setProperty('font-size', '1.35rem', 'important'); 
+            zeile.style.setProperty('margin-top', '35px', 'important');
+            zeile.style.setProperty('font-weight', '600', 'important');
+            zeile.style.setProperty('line-height', '1.3', 'important');
+        } else if (ebene === 2) {
+            // Mittlere Ebene
+            zeile.style.setProperty('margin-left', '24px', 'important');
+            zeile.style.setProperty('font-size', '1.05rem', 'important');
+            zeile.style.setProperty('margin-top', '8px', 'important');
+            zeile.style.setProperty('font-weight', '500', 'important');
+        } else {
+            // Unterste Ebene: Kompakter
+            zeile.style.setProperty('margin-left', '48px', 'important');
+            zeile.style.setProperty('font-size', '0.95rem', 'important');
+            zeile.style.setProperty('margin-top', '0', 'important');
+            zeile.style.setProperty('font-weight', '400', 'important');
+        }
+    });
+});
+</script>
+<!-- /wp:html -->
+
+<div class="pc-container" id="top">
+    <img src="https://modjor.de/wp-content/uploads/2026/07/1-Anatomiegemaelde-nachempfunden-gmj.png" alt="Anatomie Banner" class="pc-banner"></p>
+<div class="pc-home-link">
+        <a href="https://modjor.de/">« Home</a> | <a href="https://modjor.de/lesebuecher/">Zurück zu Lesebücher</a>
+    </div>
+<h1>Anatomie: lange Sätze; Sprachniveau B2 bis C1</h1>
+<h1>Tartalomjegyzék – Inhaltsverzeichnis</h1>
+<div class="pc-content">
+<div class="double-line" style="margin-top: 5px;"></div>
+<h3>I. RÉSZ: TÁJÉKOZÓDÁS – TEIL I: ORIENTIERUNG</h3>
+<div class="double-line" style="margin-bottom: 0;"></div>
+<p><a href="https://modjor.de/1-anatomie-lang/">1 – A szervrendszerek áttekintése – Übersicht über die Organsysteme</a></p>
+<p><a href="https://modjor.de/1-1-anatomie-lang/">1.1 – Az emberi test első pillantásra – Der menschliche Körper auf den ersten Blick</a></p>
+<p><a href="https://modjor.de/1-2-anatomie-lang/">1.2 – Sejt, szövet, szerv, szervrendszer – Zelle, Gewebe, Organ, Organsystem</a></p>
+<p><a href="https://modjor.de/1-3-anatomie-lang/">1.3 – A mozgás szervrendszere: passzív és aktív rész – Passiver und aktiver Bewegungsapparat</a></p>
+<p><a href="https://modjor.de/1-4-anatomie-lang/">1.4 – A bőr mint határfelület – Die Haut als Grenzfläche</a></p>
+<p><a href="https://modjor.de/1-5-anatomie-lang/">1.5 – A vérkeringés két köre – Die beiden Kreisläufe des Blutes</a></p>
+<p><a href="https://modjor.de/1-6-anatomie-lang/">1.6 – A vér és a szervezet védekezése – Blut und Immunabwehr</a></p>
+<p><a href="https://modjor.de/1-7-anatomie-lang/">1.7 – A gázcsere szervei – Die Organe des Gasaustausches</a></p>
+<p><a href="https://modjor.de/1-8-anatomie-lang/">1.8 – Az emésztés útja a szájtól a végbélig – Der Verdauungsweg von der Mundhöhle bis zum Mastdarm</a></p>
+<p><a href="https://modjor.de/1-9-anatomie-lang/">1.9 – A kiválasztás és a vízháztartás – Ausscheidung und Wasserhaushalt</a></p>
+<p><a href="https://modjor.de/1-10-anatomie-lang/">1.10 – A szaporodás szervei – Die Organe der Fortpflanzung</a></p>
+<p><a href="https://modjor.de/1-11-anatomie-lang/">1.11 – A hormonális szabályozás – Die hormonelle Steuerung</a></p>
+<p><a href="https://modjor.de/1-12-anatomie-lang/">1.12 – Az idegrendszer mint irányítóközpont – Das Nervensystem als Steuerzentrale</a></p>
+<p><a href="https://modjor.de/1-13-anatomie-lang/">1.13 – Az érzékszervek és a környezet érzékelése – Sinnesorgane und Wahrnehmung der Umwelt</a></p>
+<p><a href="https://modjor.de/1-14-anatomie-lang/">1.14 – Az egyedfejlődés vázlata – Grundzüge der Individualentwicklung</a></p>
+<div class="double-line" style="margin-top: 0;"></div>
+<h3>II. RÉSZ: RENDSZERES ANATÓMIA – TEIL II: SYSTEMATISCHE ANATOMIE</h3>
+<div class="double-line"></div>
+<p><a href="https://modjor.de/2-anatomie-lang/">2 – Bevezetés az anatómiába és az orvosi szaknyelvbe – Einführung in die Anatomie und die medizinische Fachsprache</a></p>
+<p><a href="https://modjor.de/2-1-anatomie-lang/">2.1 – Az anatómia tárgya, módszerei és részterületei – Gegenstand, Methoden und Teilgebiete der Anatomie</a></p>
+<p><a href="https://modjor.de/2-2-anatomie-lang/">2.2 – A norma fogalma és a variabilitás – Der Normbegriff und die Variabilität</a></p>
+<p><a href="https://modjor.de/2-3-anatomie-lang/">2.3 – A szervezet hierarchikus felépítése – Der hierarchische Aufbau des Organismus</a></p>
+<p><a href="https://modjor.de/2-4-anatomie-lang/">2.4 – Tengelyek, síkok, irány- és helymeghatározások – Achsen, Ebenen sowie Richtungs- und Lagebezeichnungen</a></p>
+<p><a href="https://modjor.de/2-4-1-anatomie-lang/">2.4.1 – Az anatómiai alaphelyzet, a tengelyek és a fősíkok – Die anatomische Grundstellung, die Achsen und die Hauptebenen</a></p>
+<p><a href="https://modjor.de/2-4-2-anatomie-lang/">2.4.2 – Irány- és helymeghatározó szakkifejezések – Richtungs- und Lagebezeichnungen</a></p>
+<p><a href="https://modjor.de/2-4-3-anatomie-lang/">2.4.3 – A mozgások megnevezése az ízületekben – Die Bezeichnung der Bewegungen in den Gelenken</a></p>
+<p><a href="https://modjor.de/2-5-anatomie-lang/">2.5 – A testtájak rendszere – Das System der Körperregionen</a></p>
+<p><a href="https://modjor.de/2-5-1-anatomie-lang/">2.5.1 – A fej és a nyak tájékai – Die Regionen von Kopf und Hals</a></p>
+<p><a href="https://modjor.de/2-5-2-anatomie-lang/">2.5.2 – A törzs tájékai: mellkas, has, hát, medence – Die Regionen des Rumpfes: Brust, Bauch, Rücken, Becken</a></p>
+<p><a href="https://modjor.de/2-5-3-anatomie-lang/">2.5.3 – A végtagok tájékai – Die Regionen der Gliedmaßen</a></p>
+<p><a href="https://modjor.de/2-6-anatomie-lang/">2.6 – A testüregek és savós hártyáik – Die Körperhöhlen und ihre serösen Häute</a></p>
+<p><a href="https://modjor.de/2-7-anatomie-lang/">2.7 – A latin és görög eredetű szakszókincs felépítése – Der Aufbau des lateinisch-griechischen Fachwortschatzes</a></p>
+<p><a href="https://modjor.de/2-7-1-anatomie-lang/">2.7.1 – Szótövek, előtagok és utótagok – Wortstämme, Präfixe und Suffixe</a></p>
+<p><a href="https://modjor.de/2-7-2-anatomie-lang/">2.7.2 – A latin szakkifejezések ragozása és a jelzős szerkezetek – Deklination und Fügung der lateinischen Fachausdrücke</a></p>
+<p><a href="https://modjor.de/2-7-3-anatomie-lang/">2.7.3 – Eponimák, rövidítések és a Terminologia Anatomica – Eponyme, Abkürzungen und die Terminologia Anatomica</a></p>
+<p><a href="https://modjor.de/2-8-anatomie-lang/">2.8 – Képalkotó eljárások és a metszeti szemlélet – Bildgebende Verfahren und das Denken in Schnittebenen</a></p>
+<p><a href="https://modjor.de/2-8-1-anatomie-lang/">2.8.1 – Röntgenfelvétel és számítógépes rétegvizsgálat – Röntgenaufnahme und Computertomographie</a></p>
+<p><a href="https://modjor.de/2-8-2-anatomie-lang/">2.8.2 – Mágneses rezonanciás képalkotás és ultrahang – Magnetresonanztomographie und Ultraschall</a></p>
+<p><a href="https://modjor.de/2-8-3-anatomie-lang/">2.8.3 – Gondolkodás metszetekben: a képek olvasása – Denken in Schnittebenen: das Lesen der Bilder</a></p>
+<p><a href="https://modjor.de/3-anatomie-lang/">3 – A sejt és a szövetek: citológia és szövettan – Zelle und Gewebe: Zytologie und Histologie</a></p>
+<p><a href="https://modjor.de/3-1-anatomie-lang/">3.1 – A sejt általános felépítése – Der allgemeine Bau der Zelle</a></p>
+<p><a href="https://modjor.de/3-2-anatomie-lang/">3.2 – A sejthártya szerkezete és felszíni képletei – Bau der Zellmembran und ihre Oberflächendifferenzierungen</a></p>
+<p><a href="https://modjor.de/3-2-1-anatomie-lang/">3.2.1 – A folyékony mozaik: lipidek és fehérjék – Das Flüssig-Mosaik: Lipide und Proteine</a></p>
+<p><a href="https://modjor.de/3-2-2-anatomie-lang/">3.2.2 – Anyagszállítás a membránon át – Der Stofftransport durch die Membran</a></p>
+<p><a href="https://modjor.de/3-2-3-anatomie-lang/">3.2.3 – Mikrobolyhok, csillók és ostor – Mikrovilli, Kinozilien und Geißel</a></p>
+<p><a href="https://modjor.de/3-3-anatomie-lang/">3.3 – A sejtszervecskék és feladataik – Die Zellorganellen und ihre Aufgaben</a></p>
+<p><a href="https://modjor.de/3-3-1-anatomie-lang/">3.3.1 – Az endoplazmás hálózat és a Golgi-készülék – Endoplasmatisches Retikulum und Golgi-Apparat</a></p>
+<p><a href="https://modjor.de/3-3-2-anatomie-lang/">3.3.2 – Lizoszómák, peroxiszómák és a sejt lebontórendszere – Lysosomen, Peroxisomen und das Abbausystem der Zelle</a></p>
+<p><a href="https://modjor.de/3-3-3-anatomie-lang/">3.3.3 – A mitokondrium mint erőmű – Das Mitochondrium als Kraftwerk</a></p>
+<p><a href="https://modjor.de/3-3-4-anatomie-lang/">3.3.4 – A sejtváz és a sejt mozgása – Das Zytoskelett und die Beweglichkeit der Zelle</a></p>
+<p><a href="https://modjor.de/3-3-5-anatomie-lang/">3.3.5 – Zárványok és a sejt raktárai – Einschlüsse und Speicher der Zelle</a></p>
+<p><a href="https://modjor.de/3-4-anatomie-lang/">3.4 – A sejtmag és az örökítőanyag szerveződése – Zellkern und Organisation des Erbmaterials</a></p>
+<p><a href="https://modjor.de/3-4-1-anatomie-lang/">3.4.1 – A maghártya, a magvacska és a magplazma – Kernhülle, Nukleolus und Karyoplasma</a></p>
+<p><a href="https://modjor.de/3-4-2-anatomie-lang/">3.4.2 – Kromatin, kromoszómák és a kariotípus – Chromatin, Chromosomen und Karyotyp</a></p>
+<p><a href="https://modjor.de/3-4-3-anatomie-lang/">3.4.3 – Az átírástól a fehérjéig – Vom Ablesen der Gene bis zum Protein</a></p>
+<p><a href="https://modjor.de/3-5-anatomie-lang/">3.5 – A sejtciklus és a sejtosztódás – Zellzyklus und Zellteilung</a></p>
+<p><a href="https://modjor.de/3-5-1-anatomie-lang/">3.5.1 – A sejtciklus szakaszai és ellenőrzőpontjai – Die Phasen des Zellzyklus und seine Kontrollpunkte</a></p>
+<p><a href="https://modjor.de/3-5-2-anatomie-lang/">3.5.2 – A mitózis lefolyása – Der Ablauf der Mitose</a></p>
+<p><a href="https://modjor.de/3-5-3-anatomie-lang/">3.5.3 – A meiózis és a csírasejtek – Die Meiose und die Keimzellen</a></p>
+<p><a href="https://modjor.de/3-5-4-anatomie-lang/">3.5.4 – Sejtöregedés, sejthalál és daganatos elfajulás – Zellalterung, Zelltod und Entartung</a></p>
+<p><a href="https://modjor.de/3-6-anatomie-lang/">3.6 – A sejtek közötti kapcsolatok – Die Zellverbindungen</a></p>
+<p><a href="https://modjor.de/3-7-anatomie-lang/">3.7 – A hámszövet típusai és a mirigyek – Epitheltypen und Drüsen</a></p>
+<p><a href="https://modjor.de/3-7-1-anatomie-lang/">3.7.1 – A hámsejtek polaritása és a bazális membrán – Die Polarität der Epithelzellen und die Basalmembran</a></p>
+<p><a href="https://modjor.de/3-7-2-anatomie-lang/">3.7.2 – Fedőhámok: egyrétegű és többrétegű formák – Oberflächenepithelien: einschichtige und mehrschichtige Formen</a></p>
+<p><a href="https://modjor.de/3-7-3-anatomie-lang/">3.7.3 – A külső elválasztású mirigyek – Die exokrinen Drüsen</a></p>
+<p><a href="https://modjor.de/3-7-4-anatomie-lang/">3.7.4 – A belső elválasztású mirigyek és a hámeredetű érzékhám – Die endokrinen Drüsen und das Sinnesepithel</a></p>
+<p><a href="https://modjor.de/3-8-anatomie-lang/">3.8 – A kötőszövet sejtjei és rostjai – Zellen und Fasern des Bindegewebes</a></p>
+<p><a href="https://modjor.de/3-8-1-anatomie-lang/">3.8.1 – A sejtközötti állomány: rostok és alapállomány – Die Interzellularsubstanz: Fasern und Grundsubstanz</a></p>
+<p><a href="https://modjor.de/3-8-2-anatomie-lang/">3.8.2 – A kötőszövet helyben lakó és vándorsejtjei – Ortsständige und mobile Zellen des Bindegewebes</a></p>
+<p><a href="https://modjor.de/3-8-3-anatomie-lang/">3.8.3 – A kötőszövet formái: lazától a feszesig – Die Formen des Bindegewebes: von locker bis straff</a></p>
+<p><a href="https://modjor.de/3-8-4-anatomie-lang/">3.8.4 – A zsírszövet és a retikuláris szövet – Fettgewebe und retikuläres Gewebe</a></p>
+<p><a href="https://modjor.de/3-9-anatomie-lang/">3.9 – A támasztószövetek: porc és csont – Die Stützgewebe: Knorpel und Knochen</a></p>
+<p><a href="https://modjor.de/3-9-1-anatomie-lang/">3.9.1 – A porcszövet három típusa – Die drei Typen des Knorpelgewebes</a></p>
+<p><a href="https://modjor.de/3-9-2-anatomie-lang/">3.9.2 – A csontszövet felépítése: lemezes és fonatos csont – Der Bau des Knochengewebes: Lamellen- und Geflechtknochen</a></p>
+<p><a href="https://modjor.de/3-9-3-anatomie-lang/">3.9.3 – A csontsejtek és a csont átépülése – Die Knochenzellen und der Knochenumbau</a></p>
+<p><a href="https://modjor.de/3-9-4-anatomie-lang/">3.9.4 – A csontosodás két útja – Die beiden Wege der Knochenbildung</a></p>
+<p><a href="https://modjor.de/3-10-anatomie-lang/">3.10 – Az izomszövet három formája – Die drei Formen des Muskelgewebes</a></p>
+<p><a href="https://modjor.de/3-10-1-anatomie-lang/">3.10.1 – A harántcsíkolt vázizom finomszerkezete – Der Feinbau der quergestreiften Skelettmuskulatur</a></p>
+<p><a href="https://modjor.de/3-10-2-anatomie-lang/">3.10.2 – A szívizomszövet – Das Herzmuskelgewebe</a></p>
+<p><a href="https://modjor.de/3-10-3-anatomie-lang/">3.10.3 – A simaizomszövet – Die glatte Muskulatur</a></p>
+<p><a href="https://modjor.de/3-10-4-anatomie-lang/">3.10.4 – Az izom-összehúzódás molekuláris alapjai – Die molekularen Grundlagen der Kontraktion</a></p>
+<p><a href="https://modjor.de/3-11-anatomie-lang/">3.11 – Az idegszövet: neuronok és gliasejtek – Nervengewebe: Neurone und Gliazellen</a></p>
+<p><a href="https://modjor.de/3-11-1-anatomie-lang/">3.11.1 – Az idegsejt felépítése és típusai – Bau und Typen der Nervenzelle</a></p>
+<p><a href="https://modjor.de/3-11-2-anatomie-lang/">3.11.2 – A velőshüvely és az idegrostok – Markscheide und Nervenfasern</a></p>
+<p><a href="https://modjor.de/3-11-3-anatomie-lang/">3.11.3 – A szinapszis szerkezete és működése – Bau und Funktion der Synapse</a></p>
+<p><a href="https://modjor.de/3-11-4-anatomie-lang/">3.11.4 – A gliasejtek fajtái és feladataik – Arten und Aufgaben der Gliazellen</a></p>
+<p><!-- Beginn Kapitel 4 --></p>
+<p><a href="https://modjor.de/4-anatomie-lang/">4 – A csontrendszer és a csontösszeköttetések – Skelettsystem und Knochenverbindungen</a></p>
+<p><a href="https://modjor.de/4-1-anatomie-lang/">4.1 – A csont mint szerv: felépítés és anyagcsere – Der Knochen als Organ: Bau und Stoffwechsel</a></p>
+<p><a href="https://modjor.de/4-1-1-anatomie-lang/">4.1.1 – A csont makroszkópos felépítése: tömör és szivacsos állomány – Der makroskopische Bau: Kompakta und Spongiosa</a></p>
+<p><a href="https://modjor.de/4-1-2-anatomie-lang/">4.1.2 – A csonthártya, a csontvelő és a csont erei – Knochenhaut, Knochenmark und Gefäßversorgung</a></p>
+<p><a href="https://modjor.de/4-1-3-anatomie-lang/">4.1.3 – A csont mint ásványianyag-raktár – Der Knochen als Mineralspeicher</a></p>
+<p><a href="https://modjor.de/4-2-anatomie-lang/">4.2 – A csontosodás formái és a hosszanti növekedés – Ossifikationsformen und Längenwachstum</a></p>
+<p><a href="https://modjor.de/4-2-1-anatomie-lang/">4.2.1 – Kötőszövetes és porcos csontosodás – Desmale und chondrale Ossifikation</a></p>
+<p><a href="https://modjor.de/4-2-2-anatomie-lang/">4.2.2 – A növekedési porc és a hosszanti növekedés – Die Wachstumsfuge und das Längenwachstum</a></p>
+<p><a href="https://modjor.de/4-2-3-anatomie-lang/">4.2.3 – A csontkor, a csontosodási magvak és a növekedés zavarai – Knochenalter, Knochenkerne und Wachstumsstörungen</a></p>
+<p><a href="https://modjor.de/4-3-anatomie-lang/">4.3 – A csontok alaki osztályozása – Die Einteilung der Knochen nach ihrer Form</a></p>
+<p><a href="https://modjor.de/4-4-anatomie-lang/">4.4 – A folyamatos és a megszakított összeköttetések – Kontinuierliche und diskontinuierliche Verbindungen</a></p>
+<p><a href="https://modjor.de/4-5-anatomie-lang/">4.5 – Az ízület általános felépítése és típusai – Allgemeiner Bau und Typen der Gelenke</a></p>
+<p><a href="https://modjor.de/4-5-1-anatomie-lang/">4.5.1 – Az ízületi felszínek, a tok és az ízületi üreg – Gelenkflächen, Kapsel und Gelenkhöhle</a></p>
+<p><a href="https://modjor.de/4-5-2-anatomie-lang/">4.5.2 – Kiegészítő képletek: porckorong, ajak, szalagok – Hilfseinrichtungen: Disci, Menisci, Labrum und Bänder</a></p>
+<p><a href="https://modjor.de/4-5-3-anatomie-lang/">4.5.3 – Az ízületek osztályozása tengelyek és forma szerint – Die Einteilung der Gelenke nach Achsen und Form</a></p>
+<p><a href="https://modjor.de/4-6-anatomie-lang/">4.6 – A gerincoszlop szakaszai és a csigolya alaptípusa – Abschnitte der Wirbelsäule und der Grundtyp des Wirbels</a></p>
+<p><a href="https://modjor.de/4-6-1-anatomie-lang/">4.6.1 – A csigolya alaptípusa és a gerincoszlop görbületei – Der Grundtyp des Wirbels und die Krümmungen der Wirbelsäule</a></p>
+<p><a href="https://modjor.de/4-6-2-anatomie-lang/">4.6.2 – A nyaki és a háti csigolyák sajátosságai – Besonderheiten der Hals- und Brustwirbel</a></p>
+<p><a href="https://modjor.de/4-6-3-anatomie-lang/">4.6.3 – Az ágyéki csigolyák, a keresztcsont és a farokcsont – Lendenwirbel, Kreuzbein und Steißbein</a></p>
+<p><a href="https://modjor.de/4-7-anatomie-lang/">4.7 – A gerincoszlop összeköttetései és a porckorong – Verbindungen der Wirbelsäule und die Bandscheibe</a></p>
+<p><a href="https://modjor.de/4-7-1-anatomie-lang/">4.7.1 – A porckorong felépítése és terhelése – Bau und Belastung der Bandscheibe</a></p>
+<p><a href="https://modjor.de/4-7-2-anatomie-lang/">4.7.2 – A kisízületek és a gerinc szalagrendszere – Die Wirbelgelenke und der Bandapparat</a></p>
+<p><a href="https://modjor.de/4-7-3-anatomie-lang/">4.7.3 – A fej-nyak átmenet ízületei – Die Gelenke des Kopfgelenkbereichs</a></p>
+<p><a href="https://modjor.de/4-8-anatomie-lang/">4.8 – A mellkas csontjai és ízületei – Knochen und Gelenke des Brustkorbs</a></p>
+<p><a href="https://modjor.de/4-9-anatomie-lang/">4.9 – Az agykoponya – Der Hirnschädel</a></p>
+<p><a href="https://modjor.de/4-9-1-anatomie-lang/">4.9.1 – A koponyatető csontjai és a varratok – Die Knochen des Schädeldachs und die Nähte</a></p>
+<p><a href="https://modjor.de/4-9-2-anatomie-lang/">4.9.2 – A halántékcsont és a nyakszirtcsont – Schläfenbein und Hinterhauptsbein</a></p>
+<p><a href="https://modjor.de/4-9-3-anatomie-lang/">4.9.3 – Az ékcsont és a rostacsont – Keilbein und Siebbein</a></p>
+<p><a href="https://modjor.de/4-10-anatomie-lang/">4.10 – Az arckoponya és az állkapocsízület – Gesichtsschädel und Kiefergelenk</a></p>
+<p><a href="https://modjor.de/4-10-1-anatomie-lang/">4.10.1 – A felső állcsont és a szomszédos arccsontok – Oberkiefer und benachbarte Gesichtsknochen</a></p>
+<p><a href="https://modjor.de/4-10-2-anatomie-lang/">4.10.2 – Az orrüreg csontos váza és az orrmelléküregek – Das knöcherne Gerüst der Nasenhöhle und die Nasennebenhöhlen</a></p>
+<p><a href="https://modjor.de/4-10-3-anatomie-lang/">4.10.3 – Az alsó állcsont és az állkapocsízület – Unterkiefer und Kiefergelenk</a></p>
+<p><a href="https://modjor.de/4-11-anatomie-lang/">4.11 – A koponyaalap nyílásai – Die Öffnungen der Schädelbasis</a></p>
+<p><a href="https://modjor.de/4-12-anatomie-lang/">4.12 – A vállöv csontjai és ízületei – Knochen und Gelenke des Schultergürtels</a></p>
+<p><a href="https://modjor.de/4-12-1-anatomie-lang/">4.12.1 – A kulcscsont és a lapocka – Schlüsselbein und Schulterblatt</a></p>
+<p><a href="https://modjor.de/4-12-2-anatomie-lang/">4.12.2 – A vállöv ízületei és a vállízület – Die Gelenke des Schultergürtels und das Schultergelenk</a></p>
+<p><a href="https://modjor.de/4-13-anatomie-lang/">4.13 – A felkar, az alkar és a kéz csontjai – Knochen von Oberarm, Unterarm und Hand</a></p>
+<p><a href="https://modjor.de/4-13-1-anatomie-lang/">4.13.1 – A felkarcsont – Der Oberarmknochen</a></p>
+<p><a href="https://modjor.de/4-13-2-anatomie-lang/">4.13.2 – Az orsócsont és a singcsont – Speiche und Elle</a></p>
+<p><a href="https://modjor.de/4-13-3-anatomie-lang/">4.13.3 – A kéztő, a kézközép és az ujjak csontjai – Handwurzel, Mittelhand und Finger</a></p>
+<p><a href="https://modjor.de/4-14-anatomie-lang/">4.14 – A könyök- és a csuklóízület – Ellenbogen- und Handgelenk</a></p>
+<p><a href="https://modjor.de/4-14-1-anatomie-lang/">4.14.1 – A könyökízület három részízülete – Die drei Teilgelenke des Ellenbogengelenks</a></p>
+<p><a href="https://modjor.de/4-14-2-anatomie-lang/">4.14.2 – Az alkar forgása: a két radioulnaris ízület – Die Umwendbewegung: die beiden Radioulnargelenke</a></p>
+<p><a href="https://modjor.de/4-14-3-anatomie-lang/">4.14.3 – A csukló és a kéz ízületei – Handgelenk und Gelenke der Hand</a></p>
+<p><a href="https://modjor.de/4-15-anatomie-lang/">4.15 – A medenceöv és a medence mint egész – Beckengürtel und Becken als Ganzes</a></p>
+<p><a href="https://modjor.de/4-15-1-anatomie-lang/">4.15.1 – A medencecsont három része – Die drei Teile des Hüftbeins</a></p>
+<p><a href="https://modjor.de/4-15-2-anatomie-lang/">4.15.2 – A keresztcsont-csípőcsonti ízület és a szeméremcsonti összeköttetés – Kreuzbein-Darmbein-Gelenk und Schambeinfuge</a></p>
+<p><a href="https://modjor.de/4-15-3-anatomie-lang/">4.15.3 – A kis és a nagy medence, nemi különbségek – Kleines und großes Becken, Geschlechtsunterschiede</a></p>
+<p><a href="https://modjor.de/4-16-anatomie-lang/">4.16 – A comb, a lábszár és a láb csontjai – Knochen von Oberschenkel, Unterschenkel und Fuß</a></p>
+<p><a href="https://modjor.de/4-16-1-anatomie-lang/">4.16.1 – A combcsont és a térdkalács – Oberschenkelknochen und Kniescheibe</a></p>
+<p><a href="https://modjor.de/4-16-2-anatomie-lang/">4.16.2 – A sípcsont és a szárkapocscsont – Schienbein und Wadenbein</a></p>
+<p><a href="https://modjor.de/4-16-3-anatomie-lang/">4.16.3 – A lábtő, a lábközép és a lábujjak csontjai – Fußwurzel, Mittelfuß und Zehen</a></p>
+<p><a href="https://modjor.de/4-16-4-anatomie-lang/">4.16.4 – A láb boltozatai – Die Fußgewölbe</a></p>
+<p><a href="https://modjor.de/4-17-anatomie-lang/">4.17 – A csípő-, a térd- és a bokaízület – Hüft-, Knie- und Sprunggelenk</a></p>
+<p><a href="https://modjor.de/4-17-1-anatomie-lang/">4.17.1 – A csípőízület felépítése és biztosítása – Bau und Sicherung des Hüftgelenks</a></p>
+<p><a href="https://modjor.de/4-17-2-anatomie-lang/">4.17.2 – A térdízület: meniszkuszok és szalagok – Das Kniegelenk: Menisken und Bänder</a></p>
+<p><a href="https://modjor.de/4-17-3-anatomie-lang/">4.17.3 – A felső és az alsó ugróízület – Oberes und unteres Sprunggelenk</a></p>
+<p><a href="https://modjor.de/4-17-4-anatomie-lang/">4.17.4 – A láb ízületei és szalagjai – Die Gelenke und Bänder des Fußes</a></p>
+<p><!-- Kapitel 5 --></p>
+<p><a href="https://modjor.de/5-anatomie-lang/">5 – Az izomrendszer – Das Muskelsystem</a></p>
+<p><a href="https://modjor.de/5-1-anatomie-lang/">5.1 – A vázizom mint szerv: felépítés és szerkezet – Der Skelettmuskel als Organ</a></p>
+<p><a href="https://modjor.de/5-1-1-anatomie-lang/">5.1.1 – Az izomhas, a rostkötegek és a burkok – Muskelbauch, Faserbündel und Hüllen</a></p>
+<p><a href="https://modjor.de/5-1-2-anatomie-lang/">5.1.2 – Vörös és fehér rostok, az izom erei és idegei – Rote und weiße Fasern, Gefäße und Nerven des Muskels</a></p>
+<p><a href="https://modjor.de/5-1-3-anatomie-lang/">5.1.3 – Az izomorsó és az ínorsó: az izom érzékszervei – Muskelspindel und Sehnenorgan: die Sinnesorgane des Muskels</a></p>
+<p><a href="https://modjor.de/5-2-anatomie-lang/">5.2 – Az izmok alaki típusai és rostlefutásuk – Muskelformen und Faserverlauf</a></p>
+<p><a href="https://modjor.de/5-3-anatomie-lang/">5.3 – Az izmok segédszervei: pólya, ín, nyálkatömlő – Faszie, Sehne und Schleimbeutel</a></p>
+<p><a href="https://modjor.de/5-4-anatomie-lang/">5.4 – Eredés, tapadás és az emelőrendszerek – Ursprung, Ansatz und Hebelsysteme</a></p>
+<p><a href="https://modjor.de/5-4-1-anatomie-lang/">5.4.1 – Eredés és tapadás: a punctum fixum és a punctum mobile – Ursprung und Ansatz: Punctum fixum und Punctum mobile</a></p>
+<p><a href="https://modjor.de/5-4-2-anatomie-lang/">5.4.2 – Hajlítók és feszítők, közelítők és távolítók – Beuger und Strecker, Adduktoren und Abduktoren</a></p>
+<p><a href="https://modjor.de/5-4-3-anatomie-lang/">5.4.3 – Forgatás, befelé és kifelé fordítás – Rotation, Pronation und Supination</a></p>
+<p><a href="https://modjor.de/5-4-4-anatomie-lang/">5.4.4 – Agonista, antagonista, szinergista és az emelőelv – Agonist, Antagonist, Synergist und das Hebelprinzip</a></p>
+<p><a href="https://modjor.de/5-5-anatomie-lang/">5.5 – A mimikai izmok – Die mimische Muskulatur</a></p>
+<p><a href="https://modjor.de/5-6-anatomie-lang/">5.6 – A rágóizmok – Die Kaumuskulatur</a></p>
+<p><a href="https://modjor.de/5-7-anatomie-lang/">5.7 – A nyak felületes és mély izmai – Oberflächliche und tiefe Halsmuskulatur</a></p>
+<p><a href="https://modjor.de/5-8-anatomie-lang/">5.8 – A hát felületes izmai – Die oberflächliche Rückenmuskulatur</a></p>
+<p><a href="https://modjor.de/5-8-1-anatomie-lang/">5.8.1 – A vállövhöz húzódó lapos izmok – Die flachen Muskeln zum Schultergürtel</a></p>
+<p><a href="https://modjor.de/5-8-2-anatomie-lang/">5.8.2 – A bordákhoz húzódó réteg és a lapocka rögzítői – Die Schicht zu den Rippen und die Fixatoren des Schulterblattes</a></p>
+<p><a href="https://modjor.de/5-9-anatomie-lang/">5.9 – A hát mély, autochton izomzata – Die autochthone Rückenmuskulatur</a></p>
+<p><a href="https://modjor.de/5-9-1-anatomie-lang/">5.9.1 – A gerinc mellett futó oldalsó és mediális pálya – Lateraler und medialer Trakt</a></p>
+<p><a href="https://modjor.de/5-9-2-anatomie-lang/">5.9.2 – A mély izomzat feladata: tartás és kiegyenesítés – Aufgabe der Tiefenmuskulatur: Haltung und Aufrichtung</a></p>
+<p><a href="https://modjor.de/5-10-anatomie-lang/">5.10 – A mellkas izmai és a bordaközti izmok – Brustmuskulatur und Zwischenrippenmuskeln</a></p>
+<p><a href="https://modjor.de/5-10-1-anatomie-lang/">5.10.1 – A felszínes mellizmok és működésük – Die oberflächlichen Brustmuskeln und ihre Wirkung</a></p>
+<p><a href="https://modjor.de/5-10-2-anatomie-lang/">5.10.2 – A bordaközti izmok és a légzés segédizmai – Zwischenrippenmuskeln und Atemhilfsmuskeln</a></p>
+<p><a href="https://modjor.de/5-11-anatomie-lang/">5.11 – A rekeszizom – Das Zwerchfell</a></p>
+<p><a href="https://modjor.de/5-12-anatomie-lang/">5.12 – A hasfal izmai és a lágyékcsatorna – Bauchwandmuskulatur und Leistenkanal</a></p>
+<p><a href="https://modjor.de/5-12-1-anatomie-lang/">5.12.1 – Az egyenes és a ferde hasizmok, a haránt hasizom – Gerade, schräge und quere Bauchmuskeln</a></p>
+<p><a href="https://modjor.de/5-12-2-anatomie-lang/">5.12.2 – A rectushüvely és a hasfal rétegei – Rektusscheide und Schichten der Bauchwand</a></p>
+<p><a href="https://modjor.de/5-12-3-anatomie-lang/">5.12.3 – A lágyékcsatorna és a hasprés – Leistenkanal und Bauchpresse</a></p>
+<p><a href="https://modjor.de/5-13-anatomie-lang/">5.13 – A medencefenék és a gát izmai – Beckenboden- und Dammmuskulatur</a></p>
+<p><a href="https://modjor.de/5-14-anatomie-lang/">5.14 – A váll és a felkar izmai – Muskeln von Schulter und Oberarm</a></p>
+<p><a href="https://modjor.de/5-14-1-anatomie-lang/">5.14.1 – A deltaizom és a rotátorköpeny – Deltamuskel und Rotatorenmanschette</a></p>
+<p><a href="https://modjor.de/5-14-2-anatomie-lang/">5.14.2 – A felkar hajlítói és feszítői – Beuger und Strecker des Oberarms</a></p>
+<p><a href="https://modjor.de/5-15-anatomie-lang/">5.15 – Az alkar és a kéz izmai – Muskeln von Unterarm und Hand</a></p>
+<p><a href="https://modjor.de/5-15-1-anatomie-lang/">5.15.1 – A hajlító és a feszítő oldal mint működési egység – Beuge- und Streckseite als Funktionseinheit</a></p>
+<p><a href="https://modjor.de/5-15-2-anatomie-lang/">5.15.2 – A befelé és kifelé fordítás izmai – Die Muskeln für Pronation und Supination</a></p>
+<p><a href="https://modjor.de/5-16-anatomie-lang/">5.16 – A csípő és a comb izmai – Muskeln von Hüfte und Oberschenkel</a></p>
+<p><a href="https://modjor.de/5-16-1-anatomie-lang/">5.16.1 – A csípőhajlítók és a farizmok – Hüftbeuger und Gesäßmuskeln</a></p>
+<p><a href="https://modjor.de/5-16-2-anatomie-lang/">5.16.2 – A comb feszítői, hajlítói és közelítői – Strecker, Beuger und Adduktoren des Oberschenkels</a></p>
+<p><a href="https://modjor.de/5-17-anatomie-lang/">5.17 – A lábszár izomcsoportjai – Die Muskelgruppen des Unterschenkels</a></p>
+<p><a href="https://modjor.de/5-17-1-anatomie-lang/">5.17.1 – A vádli izmai és a lábfej talpi hajlítása – Die Wadenmuskeln und die Plantarflexion</a></p>
+<p><a href="https://modjor.de/5-17-2-anatomie-lang/">5.17.2 – Az elülső és az oldalsó csoport, a láb emelése – Vordere und seitliche Gruppe, das Heben des Fußes</a></p>
+<p><!-- Kapitel 6 --></p>
+<p><a href="https://modjor.de/6-anatomie-lang/">6 – A bőr és függelékei – Die Haut und ihre Anhangsgebilde</a></p>
+<p><a href="https://modjor.de/6-1-anatomie-lang/">6.1 – A hám rétegei és a szarusodás – Die Epidermisschichten und die Verhornung</a></p>
+<p><a href="https://modjor.de/6-1-1-anatomie-lang/">6.1.1 – A hám öt rétege a mélytől a felszínig – Die fünf Schichten der Epidermis von der Tiefe zur Oberfläche</a></p>
+<p><a href="https://modjor.de/6-1-2-anatomie-lang/">6.1.2 – A szarusodás folyamata és a bőr gátfunkciója – Der Vorgang der Verhornung und die Barrierefunktion</a></p>
+<p><a href="https://modjor.de/6-1-3-anatomie-lang/">6.1.3 – A hám nem szarusodó sejtjei: Langerhans- és Merkel-sejtek – Die nicht verhornenden Zellen der Epidermis: Langerhans- und Merkel-Zellen</a></p>
+<p><a href="https://modjor.de/6-2-anatomie-lang/">6.2 – Az irha és a bőr mechanikai tulajdonságai – Lederhaut und mechanische Eigenschaften der Haut</a></p>
+<p><a href="https://modjor.de/6-2-1-anatomie-lang/">6.2.1 – A szemölcsös és a hálózatos réteg – Stratum papillare und Stratum reticulare</a></p>
+<p><a href="https://modjor.de/6-2-2-anatomie-lang/">6.2.2 – Feszülési vonalak, bőrredők és a bőrléc-rendszer – Spaltlinien, Hautfalten und das Leistenhautsystem</a></p>
+<p><a href="https://modjor.de/6-3-anatomie-lang/">6.3 – A bőralja és a zsírszövet elrendeződése – Unterhaut und Verteilung des Fettgewebes</a></p>
+<p><a href="https://modjor.de/6-4-anatomie-lang/">6.4 – A bőr festékanyaga és a színének kialakulása – Das Pigment der Haut und die Entstehung der Hautfarbe</a></p>
+<p><a href="https://modjor.de/6-5-anatomie-lang/">6.5 – A szőr felépítése és növekedési ciklusa – Bau und Wachstumszyklus des Haares</a></p>
+<p><a href="https://modjor.de/6-5-1-anatomie-lang/">6.5.1 – A szőrszál és a szőrtüsző felépítése – Der Bau von Haarschaft und Haarfollikel</a></p>
+<p><a href="https://modjor.de/6-5-2-anatomie-lang/">6.5.2 – A szőrnövekedés ciklusa és a szőrzet típusai – Der Haarzyklus und die Haartypen</a></p>
+<p><a href="https://modjor.de/6-5-3-anatomie-lang/">6.5.3 – A szőrmerevítő izom és a szőrtüsző kísérő képletei – Der Haaraufrichtemuskel und die Begleitstrukturen des Follikels</a></p>
+<p><a href="https://modjor.de/6-6-anatomie-lang/">6.6 – A köröm – Der Nagel</a></p>
+<p><a href="https://modjor.de/6-7-anatomie-lang/">6.7 – A verejték- és a faggyúmirigyek – Schweiß- und Talgdrüsen</a></p>
+<p><a href="https://modjor.de/6-7-1-anatomie-lang/">6.7.1 – A verejtékmirigyek két típusa és a hőleadás – Die beiden Typen der Schweißdrüsen und die Wärmeabgabe</a></p>
+<p><a href="https://modjor.de/6-7-2-anatomie-lang/">6.7.2 – A faggyúmirigyek és a bőr savköpenye – Die Talgdrüsen und der Säureschutzmantel</a></p>
+<p><a href="https://modjor.de/6-8-anatomie-lang/">6.8 – A bőr érhálózata és idegvégződései – Gefäßnetz und Nervenendigungen der Haut</a></p>
+<p><a href="https://modjor.de/6-8-1-anatomie-lang/">6.8.1 – A bőr két érfonata és a hőszabályozás – Die beiden Gefäßgeflechte der Haut und die Wärmeregulation</a></p>
+<p><a href="https://modjor.de/6-8-2-anatomie-lang/">6.8.2 – Szabad és testecskés idegvégződések – Freie und korpuskuläre Nervenendigungen</a></p>
+<p><a href="https://modjor.de/6-9-anatomie-lang/">6.9 – A bőr mint szerv: feladatok és sebgyógyulás – Die Haut als Organ: Aufgaben und Wundheilung</a></p>
+<p><a href="https://modjor.de/6-10-anatomie-lang/">6.10 – Az emlő felépítése – Der Bau der Brustdrüse</a></p>
+<p><a href="https://modjor.de/6-10-1-anatomie-lang/">6.10.1 – A tejmirigy felépítése és a bimbóudvar – Bau der Milchdrüse und Warzenhof</a></p>
+<p><a href="https://modjor.de/6-10-2-anatomie-lang/">6.10.2 – Az emlő fejlődése és változásai az élet során – Entwicklung und Wandel der Brustdrüse im Lauf des Lebens</a></p>
+<p><!-- Kapitel 7 --></p>
+<p><a href="https://modjor.de/7-anatomie-lang/">7 – A szív és a keringési rendszer – Herz und Kreislaufsystem</a></p>
+<p><a href="https://modjor.de/7-1-anatomie-lang/">7.1 – A vérkeringés általános terve – Der allgemeine Bauplan des Kreislaufs</a></p>
+<p><a href="https://modjor.de/7-1-1-anatomie-lang/">7.1.1 – A kis és a nagy vérkör – Lungenkreislauf und Körperkreislauf</a></p>
+<p><a href="https://modjor.de/7-1-2-anatomie-lang/">7.1.2 – Nyomásviszonyok, ellenállás és a keringés két szivattyúja – Druckverhältnisse, Widerstand und die beiden Pumpen des Kreislaufs</a></p>
+<p><a href="https://modjor.de/7-1-3-anatomie-lang/">7.1.3 – Párhuzamos és sorba kapcsolt érpályák, csodahálózatok – Parallel- und Serienschaltung, Wundernetze</a></p>
+<p><a href="https://modjor.de/7-2-anatomie-lang/">7.2 – A szív helyzete, vetületei és külső alakja – Lage, Projektion und äußere Form des Herzens</a></p>
+<p><a href="https://modjor.de/7-3-anatomie-lang/">7.3 – A pitvarok és a kamrák belső felszíne – Die Innenfläche von Vorhöfen und Kammern</a></p>
+<p><a href="https://modjor.de/7-3-1-anatomie-lang/">7.3.1 – A jobb pitvar és a jobb kamra – Rechter Vorhof und rechte Kammer</a></p>
+<p><a href="https://modjor.de/7-3-2-anatomie-lang/">7.3.2 – A bal pitvar és a bal kamra – Linker Vorhof und linke Kammer</a></p>
+<p><a href="https://modjor.de/7-4-anatomie-lang/">7.4 – A billentyűk és a szív rostos váza – Die Herzklappen und das Herzskelett</a></p>
+<p><a href="https://modjor.de/7-4-1-anatomie-lang/">7.4.1 – A vitorlás billentyűk és a papilláris izmok – Die Segelklappen und die Papillarmuskeln</a></p>
+<p><a href="https://modjor.de/7-4-2-anatomie-lang/">7.4.2 – A félhold alakú billentyűk – Die Taschenklappen</a></p>
+<p><a href="https://modjor.de/7-4-3-anatomie-lang/">7.4.3 – A rostos váz és a billentyűk vetülete a mellkasfalon – Das Herzskelett und die Projektion der Klappen auf die Brustwand</a></p>
+<p><a href="https://modjor.de/7-5-anatomie-lang/">7.5 – A szívfal rétegei és a szívburok – Wandschichten des Herzens und Herzbeutel</a></p>
+<p><a href="https://modjor.de/7-6-anatomie-lang/">7.6 – Az ingerképző és ingervezető rendszer – Das Erregungsbildungs- und Erregungsleitungssystem</a></p>
+<p><a href="https://modjor.de/7-6-1-anatomie-lang/">7.6.1 – A szinuszcsomó és a pitvar-kamrai csomó – Sinusknoten und Atrioventrikularknoten</a></p>
+<p><a href="https://modjor.de/7-6-2-anatomie-lang/">7.6.2 – A His-köteg, a szárak és a Purkinje-rostok – His-Bündel, Kammerschenkel und Purkinje-Fasern</a></p>
+<p><a href="https://modjor.de/7-7-anatomie-lang/">7.7 – A szív saját erei és beidegzése – Eigengefäße und Innervation des Herzens</a></p>
+<p><a href="https://modjor.de/7-7-1-anatomie-lang/">7.7.1 – A koszorúerek lefutása és ellátási területei – Verlauf und Versorgungsgebiete der Koronararterien</a></p>
+<p><a href="https://modjor.de/7-7-2-anatomie-lang/">7.7.2 – A szív vénái és nyirokelvezetése – Venen und Lymphabfluss des Herzens</a></p>
+<p><a href="https://modjor.de/7-7-3-anatomie-lang/">7.7.3 – A szív vegetatív beidegzése – Die vegetative Innervation des Herzens</a></p>
+<p><a href="https://modjor.de/7-8-anatomie-lang/">7.8 – Az artériák, a vénák és a hajszálerek falszerkezete – Wandbau von Arterien, Venen und Kapillaren</a></p>
+<p><a href="https://modjor.de/7-8-1-anatomie-lang/">7.8.1 – Az érfal három rétege és az artériák két típusa – Die drei Wandschichten und die beiden Arterientypen</a></p>
+<p><a href="https://modjor.de/7-8-2-anatomie-lang/">7.8.2 – Az arteriolák, a hajszálerek és a vénulák – Arteriolen, Kapillaren und Venolen</a></p>
+<p><a href="https://modjor.de/7-8-3-anatomie-lang/">7.8.3 – A vénák fala és a vér visszaáramlása – Venenwand und venöser Rückstrom</a></p>
+<p><a href="https://modjor.de/7-9-anatomie-lang/">7.9 – A aorta és ágai – Die Aorta und ihre Äste</a></p>
+<p><a href="https://modjor.de/7-9-1-anatomie-lang/">7.9.1 – Az aortaív és ágai – Der Aortenbogen und seine Äste</a></p>
+<p><a href="https://modjor.de/7-9-2-anatomie-lang/">7.9.2 – A mellkasi aorta ágai – Die Äste der Brustaorta</a></p>
+<p><a href="https://modjor.de/7-9-3-anatomie-lang/">7.9.3 – A hasi aorta páros és páratlan ágai – Paarige und unpaare Äste der Bauchaorta</a></p>
+<p><a href="https://modjor.de/7-10-anatomie-lang/">7.10 – A fej és a nyak artériái – Die Arterien von Kopf und Hals</a></p>
+<p><a href="https://modjor.de/7-10-1-anatomie-lang/">7.10.1 – A közös és a külső fejverőér – Gemeinsame und äußere Kopfschlagader</a></p>
+<p><a href="https://modjor.de/7-10-2-anatomie-lang/">7.10.2 – A belső fejverőér és az agy vérellátása – Innere Kopfschlagader und Blutversorgung des Gehirns</a></p>
+<p><a href="https://modjor.de/7-11-anatomie-lang/">7.11 – A felső és az alsó végtag artériái – Die Arterien der oberen und unteren Extremität</a></p>
+<p><a href="https://modjor.de/7-11-1-anatomie-lang/">7.11.1 – A felső végtag artériái – Die Arterien der oberen Extremität</a></p>
+<p><a href="https://modjor.de/7-11-2-anatomie-lang/">7.11.2 – Az alsó végtag artériái – Die Arterien der unteren Extremität</a></p>
+<p><a href="https://modjor.de/7-11-3-anatomie-lang/">7.11.3 – Összeköttetések, körkörös érhálózatok és a pulzustapintás helyei – Anastomosen, Gefäßkränze und die Stellen der Pulstastung</a></p>
+<p><a href="https://modjor.de/7-12-anatomie-lang/">7.12 – A felső és az alsó üresvéna gyűjtőterülete – Das Einzugsgebiet der oberen und unteren Hohlvene</a></p>
+<p><a href="https://modjor.de/7-12-1-anatomie-lang/">7.12.1 – A felső üresvéna gyűjtőterülete – Das Einzugsgebiet der oberen Hohlvene</a></p>
+<p><a href="https://modjor.de/7-12-2-anatomie-lang/">7.12.2 – Az alsó üresvéna gyűjtőterülete – Das Einzugsgebiet der unteren Hohlvene</a></p>
+<p><a href="https://modjor.de/7-13-anatomie-lang/">7.13 – A felületes vénák és a vénabillentyűk – Oberflächliche Venen und Venenklappen</a></p>
+<p><a href="https://modjor.de/7-14-anatomie-lang/">7.14 – A kapuvér-keringés és az összeköttetései – Der Pfortaderkreislauf und seine Anastomosen</a></p>
+<p><a href="https://modjor.de/7-15-anatomie-lang/">7.15 – A magzati vérkeringés és átalakulása születéskor – Der fetale Kreislauf und seine Umstellung bei der Geburt</a></p>
+<p><!-- Kapitel 8 --></p>
+<p><a href="https://modjor.de/8-anatomie-lang/">8 – A vér és a nyirokrendszer – Blut und lymphatisches System</a></p>
+<p><a href="https://modjor.de/8-1-anatomie-lang/">8.1 – A vér összetétele és a vérplazma – Zusammensetzung des Blutes und Blutplasma</a></p>
+<p><a href="https://modjor.de/8-1-1-anatomie-lang/">8.1.1 – Alakos elemek és plazma, a hematokrit – Zelluläre Bestandteile und Plasma, der Hämatokrit</a></p>
+<p><a href="https://modjor.de/8-1-2-anatomie-lang/">8.1.2 – A plazmafehérjék és feladataik – Die Plasmaproteine und ihre Aufgaben</a></p>
+<p><a href="https://modjor.de/8-2-anatomie-lang/">8.2 – A vörösvértestek szerkezete – Der Bau der roten Blutkörperchen</a></p>
+<p><a href="https://modjor.de/8-2-1-anatomie-lang/">8.2.1 – A korong alak és a sejthártya rugalmassága – Die Scheibenform und die Verformbarkeit der Membran</a></p>
+<p><a href="https://modjor.de/8-2-2-anatomie-lang/">8.2.2 – A vörös vérfesték és az oxigénszállítás – Der rote Blutfarbstoff und der Sauerstofftransport</a></p>
+<p><a href="https://modjor.de/8-2-3-anatomie-lang/">8.2.3 – A vörösvértestek élettartama és lebontása – Lebensdauer und Abbau der Erythrozyten</a></p>
+<p><a href="https://modjor.de/8-3-anatomie-lang/">8.3 – A vércsoportok – Die Blutgruppen</a></p>
+<p><a href="https://modjor.de/8-4-anatomie-lang/">8.4 – A fehérvérsejtek típusai – Die Typen der weißen Blutkörperchen</a></p>
+<p><a href="https://modjor.de/8-4-1-anatomie-lang/">8.4.1 – A szemcsés fehérvérsejtek három fajtája – Die drei Arten der Granulozyten</a></p>
+<p><a href="https://modjor.de/8-4-2-anatomie-lang/">8.4.2 – A nyiroksejtek és a falósejtek – Lymphozyten und Monozyten</a></p>
+<p><a href="https://modjor.de/8-4-3-anatomie-lang/">8.4.3 – A vérkép és az immunválasz alapjai – Blutbild und Grundzüge der Immunantwort</a></p>
+<p><a href="https://modjor.de/8-5-anatomie-lang/">8.5 – A vérlemezkék és a véralvadás alapjai – Blutplättchen und Grundlagen der Blutgerinnung</a></p>
+<p><a href="https://modjor.de/8-5-1-anatomie-lang/">8.5.1 – A vérlemezkék felépítése és az elsődleges vérzéscsillapítás – Bau der Thrombozyten und primäre Blutstillung</a></p>
+<p><a href="https://modjor.de/8-5-2-anatomie-lang/">8.5.2 – Az alvadási lánc és a fibrinháló – Die Gerinnungskaskade und das Fibrinnetz</a></p>
+<p><a href="https://modjor.de/8-5-3-anatomie-lang/">8.5.3 – A véralvadás gátlása és a rögoldás – Gerinnungshemmung und Fibrinolyse</a></p>
+<p><a href="https://modjor.de/8-6-anatomie-lang/">8.6 – A vérképzés és a csontvelő szövettana – Blutbildung und Histologie des Knochenmarks</a></p>
+<p><a href="https://modjor.de/8-6-1-anatomie-lang/">8.6.1 – A vérképzés helyei az élet során – Die Orte der Blutbildung im Lauf des Lebens</a></p>
+<p><a href="https://modjor.de/8-6-2-anatomie-lang/">8.6.2 – Az őssejtektől az érett vérsejtekig – Von der Stammzelle zur reifen Blutzelle</a></p>
+<p><a href="https://modjor.de/8-6-3-anatomie-lang/">8.6.3 – A vörös és a sárga csontvelő szerkezete – Der Bau von rotem und gelbem Knochenmark</a></p>
+<p><a href="https://modjor.de/8-7-anatomie-lang/">8.7 – A nyirok képződése és a nyirokerek – Lymphbildung und Lymphgefäße</a></p>
+<p><a href="https://modjor.de/8-7-1-anatomie-lang/">8.7.1 – A szövetnedv keletkezése és a nyirokká válása – Entstehung der Gewebsflüssigkeit und ihr Übergang in Lymphe</a></p>
+<p><a href="https://modjor.de/8-7-2-anatomie-lang/">8.7.2 – A nyirokkapillárisoktól a nyirokerekig – Von den Lymphkapillaren zu den Lymphgefäßen</a></p>
+<p><a href="https://modjor.de/8-8-anatomie-lang/">8.8 – A nagy nyiroktörzsek és a mellkasi nyirokvezeték – Die großen Lymphstämme und der Milchbrustgang</a></p>
+<p><a href="https://modjor.de/8-9-anatomie-lang/">8.9 – A nyirokcsomó felépítése – Der Bau des Lymphknotens</a></p>
+<p><a href="https://modjor.de/8-9-1-anatomie-lang/">8.9.1 – A tok, a kéreg és a velőállomány – Kapsel, Rinde und Mark</a></p>
+<p><a href="https://modjor.de/8-9-2-anatomie-lang/">8.9.2 – A nyirok útja a csomón át és a szűrőfunkció – Der Weg der Lymphe durch den Knoten und die Filterfunktion</a></p>
+<p><a href="https://modjor.de/8-10-anatomie-lang/">8.10 – A lép – Die Milz</a></p>
+<p><a href="https://modjor.de/8-11-anatomie-lang/">8.11 – A csecsemőmirigy – Der Thymus</a></p>
+<p><a href="https://modjor.de/8-12-anatomie-lang/">8.12 – A nyálkahártyához kötött nyirokszövet és a mandulák – Schleimhautassoziiertes lymphatisches Gewebe und die Mandeln</a></p>
+<p><!-- Kapitel 9 --></p>
+<p><a href="https://modjor.de/9-anatomie-lang/">9 – A légzőrendszer – Das Atmungssystem</a></p>
+<p><a href="https://modjor.de/9-1-anatomie-lang/">9.1 – A légutak felosztása és a nyálkahártya felépítése – Gliederung der Atemwege und Bau der Schleimhaut</a></p>
+<p><a href="https://modjor.de/9-1-1-anatomie-lang/">9.1.1 – Felső és alsó légutak, vezető és gázcserélő szakasz – Obere und untere Atemwege, luftleitender und gasaustauschender Abschnitt</a></p>
+<p><a href="https://modjor.de/9-1-2-anatomie-lang/">9.1.2 – A csillós hám és a nyáktakaró: az öntisztító szalag – Das Flimmerepithel und die Schleimschicht: das selbstreinigernde Band</a></p>
+<p><a href="https://modjor.de/9-2-anatomie-lang/">9.2 – Az orrüreg és a szaglóhám területe – Nasenhöhle und Riechschleimhaut</a></p>
+<p><a href="https://modjor.de/9-2-1-anatomie-lang/">9.2.1 – Az orrsövény, az orrkagylók és az orrjáratok – Nasenscheidewand, Nasenmuscheln und Nasengänge</a></p>
+<p><a href="https://modjor.de/9-2-2-anatomie-lang/">9.2.2 – A légzőhám területe: melegítés, párásítás, szűrés – Der Bereich der Regio respiratoria: Erwärmen, Anfeuchten, Filtern</a></p>
+<p><a href="https://modjor.de/9-2-3-anatomie-lang/">9.2.3 – A szaglóhám és a szagló idegrostok – Riechschleimhaut und Riechfäden</a></p>
+<p><a href="https://modjor.de/9-3-anatomie-lang/">9.3 – Az orrmelléküregek és kivezetőnyílásaik – Nasennebenhöhlen und ihre Ausführungsöffnungen</a></p>
+<p><a href="https://modjor.de/9-4-anatomie-lang/">9.4 – A garat három szakasza – Die drei Etagen des Rachens</a></p>
+<p><a href="https://modjor.de/9-5-anatomie-lang/">9.5 – A gége porcai és szalagjai – Kehlkopfknorpel und -bänder</a></p>
+<p><a href="https://modjor.de/9-5-1-anatomie-lang/">9.5.1 – A pajzsporc, a gyűrűporc és a gégefedő – Schildknorpel, Ringknorpel und Kehldeckel</a></p>
+<p><a href="https://modjor.de/9-5-2-anatomie-lang/">9.5.2 – A kannaporcok és a gége ízületei – Die Stellknorpel und die Kehlkopfgelenke</a></p>
+<p><a href="https://modjor.de/9-5-3-anatomie-lang/">9.5.3 – A gége szalagjai és rugalmas hártyái – Bänder und elastische Membranen des Kehlkopfs</a></p>
+<p><a href="https://modjor.de/9-6-anatomie-lang/">9.6 – A hangszalagok és a gége izmai – Stimmbänder und Kehlkopfmuskulatur</a></p>
+<p><a href="https://modjor.de/9-6-1-anatomie-lang/">9.6.1 – A hangrés és a hangszalagok felépítése – Stimmritze und Bau der Stimmlippen</a></p>
+<p><a href="https://modjor.de/9-6-2-anatomie-lang/">9.6.2 – A hangrést tágító és szűkítő izmok – Öffner und Schließer der Stimmritze</a></p>
+<p><a href="https://modjor.de/9-6-3-anatomie-lang/">9.6.3 – A hangképzés és a gége beidegzése – Stimmbildung und Innervation des Kehlkopfs</a></p>
+<p><a href="https://modjor.de/9-7-anatomie-lang/">9.7 – A légcső és a hörgőfa – Luftröhre und Bronchialbaum</a></p>
+<p><a href="https://modjor.de/9-7-1-anatomie-lang/">9.7.1 – A légcső falszerkezete és lefutása – Wandbau und Verlauf der Luftröhre</a></p>
+<p><a href="https://modjor.de/9-7-2-anatomie-lang/">9.7.2 – A hörgők elágazódási rendje – Die Verzweigungsordnung der Bronchien</a></p>
+<p><a href="https://modjor.de/9-7-3-anatomie-lang/">9.7.3 – A hörgőcskék fala és a légáramlás szabályozása – Wandbau der Bronchiolen und Steuerung des Luftstroms</a></p>
+<p><a href="https://modjor.de/9-8-anatomie-lang/">9.8 – A tüdő alakja, lebenyei és szegmentumai – Form, Lappen und Segmente der Lunge</a></p>
+<p><a href="https://modjor.de/9-8-1-anatomie-lang/">9.8.1 – A tüdő külső alakja, a kapu és a hasadékok – Äußere Form, Hilum und Lappenspalten</a></p>
+<p><a href="https://modjor.de/9-8-2-anatomie-lang/">9.8.2 – A szegmentumok mint önálló egységek – Die Segmente als eigenständige Einheiten</a></p>
+<p><a href="https://modjor.de/9-9-anatomie-lang/">9.9 – A tüdő kettős érellátása – Die doppelte Gefäßversorgung der Lunge</a></p>
+<p><a href="https://modjor.de/9-10-anatomie-lang/">9.10 – A léghólyagocskák és a légzési felszín – Lungenbläschen und Atemfläche</a></p>
+<p><a href="https://modjor.de/9-10-1-anatomie-lang/">9.10.1 – Az acinus és a léghólyagocskák felépítése – Der Azinus und der Bau der Alveolen</a></p>
+<p><a href="https://modjor.de/9-10-2-anatomie-lang/">9.10.2 – A vér-levegő gát és a felületaktív anyag – Die Blut-Luft-Schranke und der Surfactant</a></p>
+<p><a href="https://modjor.de/9-10-3-anatomie-lang/">9.10.3 – A tüdő tisztító- és védősejtjei – Die Reinigungs- und Abwehrzellen der Lunge</a></p>
+<p><a href="https://modjor.de/9-11-anatomie-lang/">9.11 – A mellhártya, a mellhártyaöblök és a mellüreg – Pleura, Pleurarezessus und Brusthöhle</a></p>
+<p><a href="https://modjor.de/9-11-1-anatomie-lang/">9.11.1 – A zsigeri és a fali lemez, a mellhártyaűr – Pleura visceralis und parietalis, der Pleuraspalt</a></p>
+<p><a href="https://modjor.de/9-11-2-anatomie-lang/">9.11.2 – A mellhártyaöblök és a tüdőhatárok – Die Pleurarezessus und die Lungengrenzen</a></p>
+<p><a href="https://modjor.de/9-12-anatomie-lang/">9.12 – A légzés mozgásmechanikája – Die Bewegungsmechanik der Atmung</a></p>
+<p><a href="https://modjor.de/9-12-1-anatomie-lang/">9.12.1 – A belégzés: a rekesz és a bordák munkája – Die Einatmung: Arbeit von Zwerchfell und Rippen</a></p>
+<p><a href="https://modjor.de/9-12-2-anatomie-lang/">9.12.2 – A kilégzés, a rugalmas visszatérés és a légzési segédizmok – Ausatmung, elastische Rückstellung und Atemhilfsmuskeln</a></p>
+<p><a href="https://modjor.de/9-12-3-anatomie-lang/">9.12.3 – Légzéstípusok, légzési térfogatok és a holttér – Atemtypen, Atemvolumina und Totraum</a></p>
+<p><!-- Kapitel 10 --></p>
+<p><a href="https://modjor.de/10-anatomie-lang/">10 – Az emésztőrendszer – Das Verdauungssystem</a></p>
+<p><a href="https://modjor.de/10-1-anatomie-lang/">10.1 – A bélcső általános falszerkezete – Der allgemeine Wandbau des Verdauungsrohrs</a></p>
+<p><a href="https://modjor.de/10-1-1-anatomie-lang/">10.1.1 – A négy réteg: nyálkahártya, kötőszövetes lemez, izomréteg, külső borítás – Die vier Schichten: Mukosa, Submukosa, Muskularis, äußere Hülle</a></p>
+<p><a href="https://modjor.de/10-1-2-anatomie-lang/">10.1.2 – A bélcső saját idegrendszere és mozgásai – Das Eigennervensystem des Darmrohrs und seine Bewegungen</a></p>
+<p><a href="https://modjor.de/10-2-anatomie-lang/">10.2 – A szájüreg határai és a szájpad – Grenzen der Mundhöhle und Gaumen</a></p>
+<p><a href="https://modjor.de/10-3-anatomie-lang/">10.3 – A nyelv izomzata és nyálkahártyája – Muskulatur und Schleimhaut der Zunge</a></p>
+<p><a href="https://modjor.de/10-3-1-anatomie-lang/">10.3.1 – A nyelv saját és külső izmai – Binnen- und Außenmuskulatur der Zunge</a></p>
+<p><a href="https://modjor.de/10-3-2-anatomie-lang/">10.3.2 – A nyelvszemölcsök és az ízlelőbimbók – Zungenpapillen und Geschmacksknospen</a></p>
+<p><a href="https://modjor.de/10-4-anatomie-lang/">10.4 – A fog felépítése és a fogazat – Bau des Zahnes und das Gebiss</a></p>
+<p><a href="https://modjor.de/10-4-1-anatomie-lang/">10.4.1 – A fog kemény és lágy állományai – Harte und weiche Substanzen des Zahnes</a></p>
+<p><a href="https://modjor.de/10-4-2-anatomie-lang/">10.4.2 – A fogtartó készülék és az íny – Zahnhalteapparat und Zahnfleisch</a></p>
+<p><a href="https://modjor.de/10-4-3-anatomie-lang/">10.4.3 – A tejfogazat és a maradó fogazat, a fogképlet – Milchgebiss, bleibendes Gebiss und Zahnschema</a></p>
+<p><a href="https://modjor.de/10-5-anatomie-lang/">10.5 – A nagy nyálmirigyek – Die großen Speicheldrüsen</a></p>
+<p><a href="https://modjor.de/10-6-anatomie-lang/">10.6 – A garat nyelési szakasza – Der Schluckabschnitt des Rachens</a></p>
+<p><a href="https://modjor.de/10-7-anatomie-lang/">10.7 – A nyelőcső szakaszai és szűkületei – Abschnitte und Engen der Speiseröhre</a></p>
+<p><a href="https://modjor.de/10-8-anatomie-lang/">10.8 – A gyomor alakja, részei és nyálkahártyája – Form, Abschnitte und Schleimhaut des Magens</a></p>
+<p><a href="https://modjor.de/10-8-1-anatomie-lang/">10.8.1 – A gyomor alakja, részei és izomrétegei – Form, Abschnitte und Muskelschichten des Magens</a></p>
+<p><a href="https://modjor.de/10-8-2-anatomie-lang/">10.8.2 – A gyomormirigyek sejtjei és váladékaik – Die Zellen der Magendrüsen und ihre Sekrete</a></p>
+<p><a href="https://modjor.de/10-8-3-anatomie-lang/">10.8.3 – A gyomor védelme, ürülése és a kapuőr – Schutz und Entleerung des Magens, der Pförtner</a></p>
+<p><a href="https://modjor.de/10-9-anatomie-lang/">10.9 – A patkóbél és a hasnyálmirigy kapcsolata – Zwölffingerdarm und seine Beziehung zur Bauchspeicheldrüse</a></p>
+<p><a href="https://modjor.de/10-10-anatomie-lang/">10.10 – Az éhbél és a csípőbél: a felszívó felület – Leerdarm und Krummdarm: die resorbierende Oberfläche</a></p>
+<p><a href="https://modjor.de/10-10-1-anatomie-lang/">10.10.1 – A felület háromszoros nagyítása: redők, bolyhok, mikrobolyhok – Die dreifache Oberflächenvergrößerung: Falten, Zotten, Mikrovilli</a></p>
+<p><a href="https://modjor.de/10-10-2-anatomie-lang/">10.10.2 – A bélbolyhok sejtjei, erei és nyirokerei – Zellen, Blut- und Lymphgefäße der Darmzotten</a></p>
+<p><a href="https://modjor.de/10-10-3-anatomie-lang/">10.10.3 – Az éhbél és a csípőbél különbségei – Die Unterschiede zwischen Jejunum und Ileum</a></p>
+<p><a href="https://modjor.de/10-11-anatomie-lang/">10.11 – A vastagbél szakaszai és jellegzetességei – Abschnitte und Merkmale des Dickdarms</a></p>
+<p><a href="https://modjor.de/10-11-1-anatomie-lang/">10.11.1 – A vastagbél négy jellegzetes külső bélyege – Die vier typischen äußeren Merkmale des Dickdarms</a></p>
+<p><a href="https://modjor.de/10-11-2-anatomie-lang/">10.11.2 – A vastagbél szakaszai és lefutása – Die Abschnitte und der Verlauf des Dickdarms</a></p>
+<p><a href="https://modjor.de/10-11-3-anatomie-lang/">10.11.3 – A vastagbél nyálkahártyája és a bélflóra – Schleimhaut des Dickdarms und Darmflora</a></p>
+<p><a href="https://modjor.de/10-12-anatomie-lang/">10.12 – A féregnyúlvány – Der Wurmfortsatz</a></p>
+<p><a href="https://modjor.de/10-13-anatomie-lang/">10.13 – A végbél és a záróizmok – Mastdarm und Schließmuskeln</a></p>
+<p><a href="https://modjor.de/10-14-anatomie-lang/">10.14 – A máj lebenyei, a májkapu és a májlebenyke – Leberlappen, Leberpforte und Leberläppchen</a></p>
+<p><a href="https://modjor.de/10-14-1-anatomie-lang/">10.14.1 – A máj alakja, lebenyei és a májkapu – Form, Lappen und Pforte der Leber</a></p>
+<p><a href="https://modjor.de/10-14-2-anatomie-lang/">10.14.2 – A májlebenyke és a máj kettős vérellátása – Das Leberläppchen und die doppelte Blutversorgung</a></p>
+<p><a href="https://modjor.de/10-14-3-anatomie-lang/">10.14.3 – A májsejt feladatai és az epe képződése – Aufgaben der Leberzelle und Gallebildung</a></p>
+<p><a href="https://modjor.de/10-15-anatomie-lang/">10.15 – Az epehólyag és az epeutak – Gallenblase und Gallenwege</a></p>
+<p><a href="https://modjor.de/10-16-anatomie-lang/">10.16 – A hasnyálmirigy külső elválasztású része – Der exokrine Teil der Bauchspeicheldrüse</a></p>
+<p><a href="https://modjor.de/10-17-anatomie-lang/">10.17 – A hashártya, a bélfodor és a hasüreg tereinek felosztása – Bauchfell, Gekröse und die Gliederung der Bauchhöhle</a></p>
+<p><a href="https://modjor.de/10-17-1-anatomie-lang/">10.17.1 – A fali és a zsigeri hashártya, a hashártyaűr – Bauchfell der Wand und der Eingeweide, die Bauchfellhöhle</a></p>
+<p><a href="https://modjor.de/10-17-2-anatomie-lang/">10.17.2 – A bélfodor, a csepleszek és a hashártya kettőzetei – Gekröse, Netze und Bauchfellduplikaturen</a></p>
+<p><a href="https://modjor.de/10-17-3-anatomie-lang/">10.17.3 – Hashártyán belüli és mögötti helyzet – Intraperitoneale und retroperitoneale Lage</a></p>
+<p><!-- Kapitel 11 --></p>
+<p><a href="https://modjor.de/11-anatomie-lang/">11 – A húgyszervek – Die Harnorgane</a></p>
+<p><a href="https://modjor.de/11-1-anatomie-lang/">11.1 – A vese helyzete, burkai és rögzítése – Lage, Hüllen und Fixierung der Niere</a></p>
+<p><a href="https://modjor.de/11-2-anatomie-lang/">11.2 – A vese külső alakja és metszeti képe – Äußere Form und Schnittbild der Niere</a></p>
+<p><a href="https://modjor.de/11-2-1-anatomie-lang/">11.2.1 – A vese külső alakja, a kapu és a vesekapu képletei – Äußere Form, Hilum und die Strukturen der Nierenpforte</a></p>
+<p><a href="https://modjor.de/11-2-2-anatomie-lang/">11.2.2 – A kéreg- és a velőállomány, a piramisok és a lebenykék – Rinde und Mark, Pyramiden und Läppchen</a></p>
+<p><a href="https://modjor.de/11-3-anatomie-lang/">11.3 – A nefron szakaszai – Die Abschnitte des Nephrons</a></p>
+<p><a href="https://modjor.de/11-3-1-anatomie-lang/">11.3.1 – A közeli kanyarulatos csatorna és a kacs – Proximaler Tubulus und Henle-Schleife</a></p>
+<p><a href="https://modjor.de/11-3-2-anatomie-lang/">11.3.2 – A távoli kanyarulatos csatorna és a gyűjtőcsatorna – Distaler Tubulus und Sammelrohr</a></p>
+<p><a href="https://modjor.de/11-3-3-anatomie-lang/">11.3.3 – A kéregbeli és a velő közeli nefronok, az ellenáramlás elve – Kortikale und juxtamedulläre Nephrone, das Gegenstromprinzip</a></p>
+<p><a href="https://modjor.de/11-4-anatomie-lang/">11.4 – A vesetestecske és a szűrőgát – Nierenkörperchen und Filtrationsbarriere</a></p>
+<p><a href="https://modjor.de/11-4-1-anatomie-lang/">11.4.1 – Az érgomolyag és a kettős falú tok – Glomerulus und doppelwandige Kapsel</a></p>
+<p><a href="https://modjor.de/11-4-2-anatomie-lang/">11.4.2 – A szűrőgát három rétege és a lábas sejtek – Die drei Schichten der Filtrationsbarriere und die Podozyten</a></p>
+<p><a href="https://modjor.de/11-5-anatomie-lang/">11.5 – A vese sajátos érrendszere – Das besondere Gefäßsystem der Niere</a></p>
+<p><a href="https://modjor.de/11-6-anatomie-lang/">11.6 – A juxtaglomeruláris készülék – Der juxtaglomeruläre Apparat</a></p>
+<p><a href="https://modjor.de/11-7-anatomie-lang/">11.7 – A vesekelyhek, a vesemedence és a húgyvezeték – Nierenkelche, Nierenbecken und Harnleiter</a></p>
+<p><a href="https://modjor.de/11-7-1-anatomie-lang/">11.7.1 – A kelyhek és a vesemedence két alaptípusa – Die Kelche und die beiden Grundtypen des Nierenbeckens</a></p>
+<p><a href="https://modjor.de/11-7-2-anatomie-lang/">11.7.2 – A húgyvezeték lefutása, szűkületei és falszerkezete – Verlauf, Engen und Wandbau des Harnleiters</a></p>
+<p><a href="https://modjor.de/11-8-anatomie-lang/">11.8 – A húgyhólyag felépítése és a hólyagháromszög – Bau der Harnblase und Blasendreieck</a></p>
+<p><a href="https://modjor.de/11-8-1-anatomie-lang/">11.8.1 – A hólyag alakja, falszerkezete és az átmeneti hám – Form, Wandbau und Übergangsepithel der Blase</a></p>
+<p><a href="https://modjor.de/11-8-2-anatomie-lang/">11.8.2 – A hólyagháromszög, a záróizmok és a vizeletürítés – Blasendreieck, Schließmuskeln und Blasenentleerung</a></p>
+<p><a href="https://modjor.de/11-9-anatomie-lang/">11.9 – A húgycső férfiban és nőben – Die Harnröhre bei Mann und Frau</a></p>
+<p><!-- Kapitel 12 --></p>
+<p><a href="https://modjor.de/12-anatomie-lang/">12 – A nemi szervek – Die Geschlechtsorgane</a></p>
+<p><a href="https://modjor.de/12-1-anatomie-lang/">12.1 – A férfi nemi szervek áttekintése – Übersicht über die männlichen Geschlechtsorgane</a></p>
+<p><a href="https://modjor.de/12-2-anatomie-lang/">12.2 – A here felépítése és a kanyarulatos csatornák – Bau des Hodens und die Hodenkanälchen</a></p>
+<p><a href="https://modjor.de/12-2-1-anatomie-lang/">12.2.1 – A here burkai és lebenykés szerkezete – Hodenhüllen und läppchenförmiger Aufbau des Hodens</a></p>
+<p><a href="https://modjor.de/12-2-2-anatomie-lang/">12.2.2 – A kanyarulatos ondócsatornák fala és a Sertoli-sejtek – Wand der Hodenkanälchen und die Sertoli-Zellen</a></p>
+<p><a href="https://modjor.de/12-2-3-anatomie-lang/">12.2.3 – A hímivarsejtek képződésének szakaszai – Die Stadien der Spermienbildung</a></p>
+<p><a href="https://modjor.de/12-2-4-anatomie-lang/">12.2.4 – A Leydig-sejtek és a vér–here gát – Leydig-Zellen und Blut-Hoden-Schranke</a></p>
+<p><a href="https://modjor.de/12-3-anatomie-lang/">12.3 – A mellékhere, az ondóvezeték és az ondózsinór – Nebenhoden, Samenleiter und Samenstrang</a></p>
+<p><a href="https://modjor.de/12-4-anatomie-lang/">12.4 – A járulékos nemi mirigyek – Die akzessorischen Geschlechtsdrüsen</a></p>
+<p><a href="https://modjor.de/12-5-anatomie-lang/">12.5 – A hímvessző barlangos testei – Die Schwellkörper des Penis</a></p>
+<p><a href="https://modjor.de/12-6-anatomie-lang/">12.6 – A herezacskó és a herék hőszabályozása – Hodensack und Temperaturregulation der Hoden</a></p>
+<p><a href="https://modjor.de/12-7-anatomie-lang/">12.7 – A női nemi szervek áttekintése – Übersicht über die weiblichen Geschlechtsorgane</a></p>
+<p><a href="https://modjor.de/12-8-anatomie-lang/">12.8 – A petefészek és a tüszők érési szakaszai – Eierstock und Reifungsstadien der Follikel</a></p>
+<p><a href="https://modjor.de/12-8-1-anatomie-lang/">12.8.1 – A petefészek helyzete, rögzítése és metszeti képe – Lage, Fixierung und Schnittbild des Eierstocks</a></p>
+<p><a href="https://modjor.de/12-8-2-anatomie-lang/">12.8.2 – Az ősivarsejtektől az elsődleges tüszőkig – Von den Urkeimzellen bis zu den Primärfollikeln</a></p>
+<p><a href="https://modjor.de/12-8-3-anatomie-lang/">12.8.3 – A növekvő és az érett tüsző – Der wachsende und der reife Follikel</a></p>
+<p><a href="https://modjor.de/12-8-4-anatomie-lang/">12.8.4 – A tüszőrepedés és a sárgatest – Follikelsprung und Gelbkörper</a></p>
+<p><a href="https://modjor.de/12-8-5-anatomie-lang/">12.8.5 – A tüszőelhalás és a petefészek életkori változásai – Follikelatresie und Altersveränderungen des Eierstocks</a></p>
+<p><a href="https://modjor.de/12-9-anatomie-lang/">12.9 – A méhkürt szakaszai – Die Abschnitte des Eileiters</a></p>
+<p><a href="https://modjor.de/12-10-anatomie-lang/">12.10 – A méh felépítése, rétegei és helyzete – Bau, Wandschichten und Lage der Gebärmutter</a></p>
+<p><a href="https://modjor.de/12-10-1-anatomie-lang/">12.10.1 – A méh alakja, szakaszai és ürege – Form, Abschnitte und Höhle der Gebärmutter</a></p>
+<p><a href="https://modjor.de/12-10-2-anatomie-lang/">12.10.2 – A méhfal három rétege – Die drei Wandschichten der Gebärmutter</a></p>
+<p><a href="https://modjor.de/12-10-3-anatomie-lang/">12.10.3 – A méhnyálkahártya felépítése és ciklikus átépülése – Bau und zyklischer Umbau der Gebärmutterschleimhaut</a></p>
+<p><a href="https://modjor.de/12-10-4-anatomie-lang/">12.10.4 – A méhnyak és a méhszáj – Gebärmutterhals und Muttermund</a></p>
+<p><a href="https://modjor.de/12-10-5-anatomie-lang/">12.10.5 – A méh helyzete és szalagos rögzítése – Lage und Bandapparat der Gebärmutter</a></p>
+<p><a href="https://modjor.de/12-11-anatomie-lang/">12.11 – A hüvely és a külső nemi szervek – Scheide und äußere Geschlechtsorgane</a></p>
+<p><a href="https://modjor.de/12-11-1-anatomie-lang/">12.11.1 – A hüvely fala, boltozata és nyálkahártyája – Wand, Gewölbe und Schleimhaut der Scheide</a></p>
+<p><a href="https://modjor.de/12-11-2-anatomie-lang/">12.11.2 – A szeméremtest képletei – Die Gebilde der Vulva</a></p>
+<p><a href="https://modjor.de/12-11-3-anatomie-lang/">12.11.3 – A csikló és a női barlangos testek – Klitoris und die weiblichen Schwellkörper</a></p>
+<p><a href="https://modjor.de/12-11-4-anatomie-lang/">12.11.4 – A gát és a medencefenék – Damm und Beckenboden</a></p>
+<p><a href="https://modjor.de/12-12-anatomie-lang/">12.12 – A méhlepény szerkezete – Der Bau des Mutterkuchens</a></p>
+<p><!-- Kapitel 13 --></p>
+<p><a href="https://modjor.de/13-anatomie-lang/">13 – A belső elválasztású mirigyek – Die endokrinen Drüsen</a></p>
+<p><a href="https://modjor.de/13-1-anatomie-lang/">13.1 – A hormonális szabályozás alapelvei – Grundprinzipien der hormonellen Steuerung</a></p>
+<p><a href="https://modjor.de/13-2-anatomie-lang/">13.2 – A hipotalamusz és az agyalapi mirigy kapcsolata – Die Verbindung von Hypothalamus und Hirnanhangsdrüse</a></p>
+<p><a href="https://modjor.de/13-3-anatomie-lang/">13.3 – Az agyalapi mirigy elülső és hátulsó lebenye – Vorder- und Hinterlappen der Hypophyse</a></p>
+<p><a href="https://modjor.de/13-3-1-anatomie-lang/">13.3.1 – A mirigyes lebeny sejttípusai és festődésük – Die Zelltypen des Drüsenlappens und ihre Anfärbbarkeit</a></p>
+<p><a href="https://modjor.de/13-3-2-anatomie-lang/">13.3.2 – Az elülső lebeny hormonjai és célszervei – Die Hormone des Vorderlappens und ihre Zielorgane</a></p>
+<p><a href="https://modjor.de/13-3-3-anatomie-lang/">13.3.3 – A hátulsó lebeny mint neurohormonális raktár – Der Hinterlappen als neurohormonaler Speicher</a></p>
+<p><a href="https://modjor.de/13-4-anatomie-lang/">13.4 – A tobozmirigy – Die Zirbeldrüse</a></p>
+<p><a href="https://modjor.de/13-5-anatomie-lang/">13.5 – A pajzsmirigy felépítése és tüszői – Bau und Follikel der Schilddrüse</a></p>
+<p><a href="https://modjor.de/13-6-anatomie-lang/">13.6 – A mellékpajzsmirigyek – Die Nebenschilddrüsen</a></p>
+<p><a href="https://modjor.de/13-7-anatomie-lang/">13.7 – A mellékvesekéreg zónái – Die Zonen der Nebennierenrinde</a></p>
+<p><a href="https://modjor.de/13-8-anatomie-lang/">13.8 – A mellékvesevelő – Das Nebennierenmark</a></p>
+<p><a href="https://modjor.de/13-9-anatomie-lang/">13.9 – A hasnyálmirigy-szigetek sejttípusai – Die Zelltypen der Bauchspeicheldrüseninseln</a></p>
+<p><a href="https://modjor.de/13-10-anatomie-lang/">13.10 – A nemi mirigyek belső elválasztású működése – Die endokrine Funktion der Keimdrüsen</a></p>
+<p><a href="https://modjor.de/13-11-anatomie-lang/">13.11 – Belső elválasztású működésű további szervek – Weitere Organe mit endokriner Funktion</a></p>
+<p><!-- Kapitel 14 --></p>
+<p><a href="https://modjor.de/14-anatomie-lang/">14 – Az idegrendszer – Das Nervensystem</a></p>
+<p><a href="https://modjor.de/14-1-anatomie-lang/">14.1 – Az idegrendszer felosztása és alapfogalmai – Gliederung und Grundbegriffe des Nervensystems</a></p>
+<p><a href="https://modjor.de/14-2-anatomie-lang/">14.2 – Az idegsejt felépítése és típusai – Bau und Typen der Nervenzelle</a></p>
+<p><a href="https://modjor.de/14-3-anatomie-lang/">14.3 – A gliasejtek és a velőshüvely – Gliazellen und Markscheide</a></p>
+<p><a href="https://modjor.de/14-4-anatomie-lang/">14.4 – A szinapszis és az ingerület átvitele – Synapse und Erregungsübertragung</a></p>
+<p><a href="https://modjor.de/14-5-anatomie-lang/">14.5 – A szürke- és a fehérállomány elrendeződése – Die Anordnung von grauer und weißer Substanz</a></p>
+<p><a href="https://modjor.de/14-6-anatomie-lang/">14.6 – A gerincvelő szerkezete és szelvényessége – Bau und Segmentierung des Rückenmarks</a></p>
+<p><a href="https://modjor.de/14-7-anatomie-lang/">14.7 – A reflexív – Der Reflexbogen</a></p>
+<p><a href="https://modjor.de/14-8-anatomie-lang/">14.8 – A nyúltvelő és a híd – Verlängertes Mark und Brücke</a></p>
+<p><a href="https://modjor.de/14-9-anatomie-lang/">14.9 – A középagy és a hálózatos állomány – Mittelhirn und Formatio reticularis</a></p>
+<p><a href="https://modjor.de/14-10-anatomie-lang/">14.10 – A kisagy felépítése és összeköttetései – Bau und Verbindungen des Kleinhirns</a></p>
+<p><a href="https://modjor.de/14-11-anatomie-lang/">14.11 – A talamusz és a hipotalamusz – Thalamus und Hypothalamus</a></p>
+<p><a href="https://modjor.de/14-12-anatomie-lang/">14.12 – A nagyagyfélteke felszíne: barázdák és tekervények – Die Oberfläche der Großhirnhemisphäre: Furchen und Windungen</a></p>
+<p><a href="https://modjor.de/14-13-anatomie-lang/">14.13 – Az agykéreg rétegei és működési területei – Rindenschichten und Funktionsfelder</a></p>
+<p><a href="https://modjor.de/14-14-anatomie-lang/">14.14 – A törzsdúcok és a belső tok – Basalganglien und inner Kapsel</a></p>
+<p><a href="https://modjor.de/14-15-anatomie-lang/">14.15 – A limbikus rendszer – Das limbische System</a></p>
+<p><a href="https://modjor.de/14-16-anatomie-lang/">14.16 – A felszálló és a leszálló pályák – Auf- und absteigende Bahnen</a></p>
+<p><a href="https://modjor.de/14-16-1-anatomie-lang/">14.16.1 – A felszálló érző pályák: a hátsó kötegek rendszere – Die aufsteigenden sensiblen Bahnen: das Hinterstrangsystem</a></p>
+<p><a href="https://modjor.de/14-16-2-anatomie-lang/">14.16.2 – A fájdalom- és a hőérzés pályái – Die Bahnen für Schmerz- und Temperaturempfindung</a></p>
+<p><a href="https://modjor.de/14-16-3-anatomie-lang/">14.16.3 – A piramispálya – Die Pyramidenbahn</a></p>
+<p><a href="https://modjor.de/14-16-4-anatomie-lang/">14.16.4 – Az extrapiramidális leszálló pályák – Die extrapyramidalen absteigenden Bahnen</a></p>
+<p><a href="https://modjor.de/14-17-anatomie-lang/">14.17 – Az agyhártyák és az agyvíz keringése – Hirnhäute und Liquorzirkulation</a></p>
+<p><a href="https://modjor.de/14-18-anatomie-lang/">14.18 – Az agy artériái és az agyalapi érgyűrű – Die Hirnarterien und der Arterienkranz an der Hirnbasis</a></p>
+<p><a href="https://modjor.de/14-19-anatomie-lang/">14.19 – A tizenkét agyideg – Die zwölf Hirnnerven</a></p>
+<p><a href="https://modjor.de/14-19-1-anatomie-lang/">14.19.1 – Az agyidegek rendszere, magvaik és kilépési helyeik – Das System der Hirnnerven, ihre Kerne und Austrittsstellen</a></p>
+<p><a href="https://modjor.de/14-19-2-anatomie-lang/">14.19.2 – A szaglóideg, a látóideg és a szemmozgató idegek (I–IV) – Riechnerv, Sehnerv und die Augenmuskelnerven</a></p>
+<p><a href="https://modjor.de/14-19-3-anatomie-lang/">14.19.3 – A háromosztatú ideg (V) – Der Drillingsnerv</a></p>
+<p><a href="https://modjor.de/14-19-4-anatomie-lang/">14.19.4 – A távolító ideg, az arcideg és a halló-egyensúlyozó ideg (VI–VIII) – Abduzensnerv, Gesichtsnerv und Hör-Gleichgewichts-Nerv</a></p>
+<p><a href="https://modjor.de/14-19-5-anatomie-lang/">14.19.5 – A nyelvgaratideg, a bolygóideg, a járulékos és a nyelv alatti ideg (IX–XII) – Zungen-Rachen-Nerv, Vagus, Beinerv und Unterzungennerv</a></p>
+<p><a href="https://modjor.de/14-20-anatomie-lang/">14.20 – A gerincvelői idegek és a bőrszelvények – Spinalnerven und Dermatome</a></p>
+<p><a href="https://modjor.de/14-21-1-anatomie-lang/">14.21.1 – A nyaki fonat és a rekeszideg – Der Halsplexus und der Zwerchfellnerv</a></p>
+<p><a href="https://modjor.de/14-21-2-anatomie-lang/">14.21.2 – A karfonat felépítése és rövid ágai – Aufbau des Armgeflechts und seine kurzen Äste</a></p>
+<p><a href="https://modjor.de/14-21-3-anatomie-lang/">14.21.3 – A karfonat hosszú ágai – Die langen Äste des Armgeflechts</a></p>
+<p><a href="https://modjor.de/14-22-1-anatomie-lang/">14.22.1 – Az ágyéki fonat ágai – Die Äste des Lendengeflechts</a></p>
+<p><a href="https://modjor.de/14-22-2-anatomie-lang/">14.22.2 – A keresztcsonti fonat és az ülőideg – Das Kreuzgeflecht und der Ischiasnerv</a></p>
+<p><a href="https://modjor.de/14-22-3-anatomie-lang/">14.22.3 – A far- és a gátidegek – Die Gesäß- und Dammnerven</a></p>
+<p><a href="https://modjor.de/14-23-anatomie-lang/">14.23 – A szimpatikus rész – Der sympathische Teil</a></p>
+<p><a href="https://modjor.de/14-24-anatomie-lang/">14.24 – A paraszimpatikus rész – Der parasympathische Teil</a></p>
+<p><a href="https://modjor.de/14-25-anatomie-lang/">14.25 – A bélidegrendszer – Das enterische Nervensystem</a></p>
+<p><!-- Kapitel 15 --></p>
+<p><a href="https://modjor.de/15-anatomie-lang/">15 – Az érzékszervek – Die Sinnesorgane</a></p>
+<p><a href="https://modjor.de/15-1-anatomie-lang/">15.1 – Az érzékelés általános elvei és a receptorok – Allgemeine Prinzipien der Wahrnehmung und die Rezeptoren</a></p>
+<p><a href="https://modjor.de/15-2-anatomie-lang/">15.2 – A szemgödör és a szem védőkészüléke – Augenhöhle und Schutzeinrichtungen des Auges</a></p>
+<p><a href="https://modjor.de/15-3-anatomie-lang/">15.3 – A külső szemizmok – Die äußeren Augenmuskeln</a></p>
+<p><a href="https://modjor.de/15-4-anatomie-lang/">15.4 – A könnyszervek – Der Tränenapparat</a></p>
+<p><a href="https://modjor.de/15-5-anatomie-lang/">15.5 – Az ínhártya és a szaruhártya – Lederhaut und Hornhaut</a></p>
+<p><a href="https://modjor.de/15-6-anatomie-lang/">15.6 – Az érhártya, a sugártest és a szivárványhártya – Aderhaut, Ziliarkörper und Regenbogenhaut</a></p>
+<p><a href="https://modjor.de/15-7-anatomie-lang/">15.7 – Az ideghártya rétegei és a látósejtek – Die Schichten der Netzhaut und die Sehzellen</a></p>
+<p><a href="https://modjor.de/15-7-1-anatomie-lang/">15.7.1 – Az ideghártya rétegződése és a festékes hám – Der Schichtenbau der Netzhaut und das Pigmentepithel</a></p>
+<p><a href="https://modjor.de/15-7-2-anatomie-lang/">15.7.2 – A pálcikák és a csapok – Stäbchen und Zapfen</a></p>
+<p><a href="https://modjor.de/15-7-3-anatomie-lang/">15.7.3 – A sárgafolt, a látógödröcske és a vakfolt – Gelber Fleck, Sehgrube und blinder Fleck</a></p>
+<p><a href="https://modjor.de/15-8-anatomie-lang/">15.8 – A szemlencse és az alkalmazkodás – Augenlinse und Akkommodation</a></p>
+<p><a href="https://modjor.de/15-9-anatomie-lang/">15.9 – A csarnokvíz és az üvegtest – Kammerwasser und Glaskörper</a></p>
+<p><a href="https://modjor.de/15-10-anatomie-lang/">15.10 – A látópálya és a látókereszteződés – Sehbahn und Sehnervenkreuzung</a></p>
+<p><a href="https://modjor.de/15-11-anatomie-lang/">15.11 – A külső fül és a dobhártya – Äußeres Ohr und Trommelfell</a></p>
+<p><a href="https://modjor.de/15-12-anatomie-lang/">15.12 – A dobüreg, a hallócsontocskák és a fülkürt – Paukenhöhle, Gehörknöchelchen und Ohrtrompete</a></p>
+<p><a href="https://modjor.de/15-13-anatomie-lang/">15.13 – A csontos és a hártyás labirintus – Knöchernes und häutiges Labyrinth</a></p>
+<p><a href="https://modjor.de/15-14-anatomie-lang/">15.14 – A csiga és a Corti-féle szerv – Schnecke und Corti-Organ</a></p>
+<p><a href="https://modjor.de/15-15-anatomie-lang/">15.15 – Az egyensúlyozó szerv: tömlőcskék és ívjáratok – Das Gleichgewichtsorgan: Vorhofsäckchen und Bogengänge</a></p>
+<p><a href="https://modjor.de/15-16-anatomie-lang/">15.16 – A halló- és az egyensúlypálya – Hör- und Gleichgewichtsbahn</a></p>
+<p><a href="https://modjor.de/15-17-anatomie-lang/">15.17 – A szaglószerv és a szaglópálya – Riechorgan und Riechbahn</a></p>
+<p><a href="https://modjor.de/15-18-anatomie-lang/">15.18 – Az ízlelőbimbók és az ízlelőpálya – Geschmacksknospen und Geschmacksbahn</a></p>
+<p><a href="https://modjor.de/15-19-anatomie-lang/">15.19 – A bőr érzőtestecskéi – Die Sinneskörperchen der Haut</a></p>
+<div class="double-line"></div>
+<p>        <img src="https://modjor.de/wp-content/uploads/2026/07/Embryologie-2-panor.png" alt="Embryologie Banner" class="pc-banner"></p>
+<div class="double-line" style="margin-top: 0;"></div>
+<h3>III. RÉSZ: FEJLŐDÉS ÉS EREDET...</h3>
+<p><!-- Kapitel 16 --></p>
+<p><a href="https://modjor.de/16-anatomie-lang/">16 – Embriológia – Embryologie</a></p>
+<p><a href="https://modjor.de/16-1-anatomie-lang/">16.1 – Az ivarsejtek érése – Die Reifung der Keimzellen</a></p>
+<p><a href="https://modjor.de/16-2-anatomie-lang/">16.2 – A megtermékenyítés – Die Befruchtung</a></p>
+<p><a href="https://modjor.de/16-3-anatomie-lang/">16.3 – A barázdálódás és a szedercsíra – Furchung und Maulbeerkeim</a></p>
+<p><a href="https://modjor.de/16-4-anatomie-lang/">16.4 – A hólyagcsíra és a beágyazódás – Keimblase und Einnistung</a></p>
+<p><a href="https://modjor.de/16-5-anatomie-lang/">16.5 – A két- és a háromlemezű csíra kialakulása – Die Bildung der zwei- und dreiblättrigen Keimscheibe</a></p>
+<p><a href="https://modjor.de/16-6-anatomie-lang/">16.6 – A csíralemezek származékai – Die Abkömmlinge der Keimblätter</a></p>
+<p><a href="https://modjor.de/16-6-1-anatomie-lang/">16.6.1 – A külső csíralemez származékai – Die Abkömmlinge des äußeren Keimblattes</a></p>
+<p><a href="https://modjor.de/16-6-2-anatomie-lang/">16.6.2 – A középső csíralemez származékai – Die Abkömmlinge des mittleren Keimblattes</a></p>
+<p><a href="https://modjor.de/16-6-3-anatomie-lang/">16.6.3 – A belső csíralemez származékai – Die Abkömmlinge des inneren Keimblattes</a></p>
+<p><a href="https://modjor.de/16-7-anatomie-lang/">16.7 – A velőcső és a velőléc kialakulása – Bildung von Neuralrohr und Neuralleiste</a></p>
+<p><a href="https://modjor.de/16-8-anatomie-lang/">16.8 – Az ősszelvények és a szelvényezettség – Somiten und Segmentierung</a></p>
+<p><a href="https://modjor.de/16-9-anatomie-lang/">16.9 – A csíra hajlása és a testforma kialakulása – Abfaltung des Keims und Ausbildung der Körperform</a></p>
+<p><a href="https://modjor.de/16-10-anatomie-lang/">16.10 – A magzatburkok, a köldökzsinór és a méhlepény – Eihäute, Nabelschnur und Mutterkuchen</a></p>
+<p><a href="https://modjor.de/16-11-anatomie-lang/">16.11 – A magzati időszak szakaszai – Die Abschnitte der Fetalperiode</a></p>
+<p><a href="https://modjor.de/16-12-anatomie-lang/">16.12 – A kritikus időszakok és a fejlődési rendellenességek – Kritische Perioden und Fehlbildungen</a></p>
+<p><!-- Kapitel 17 --></p>
+<p><a href="https://modjor.de/17-anatomie-lang/">17 – Törzsfejlődés és összehasonlító anatómia – Stammesentwicklung und vergleichende Anatomie</a></p>
+<p><a href="https://modjor.de/17-1-anatomie-lang/">17.1 – Homológia, analógia és a rekapituláció kérdése – Homologie, Analogie und die Frage der Rekapitulation</a></p>
+<p><a href="https://modjor.de/17-2-anatomie-lang/">17.2 – A gerincesek testfelépítésének alapterve – Der Bauplan der Wirbeltiere</a></p>
+<p><a href="https://modjor.de/17-3-anatomie-lang/">17.3 – A gerinchúrtól a gerincoszlopig – Von der Chorda dorsalis zur Wirbelsäule</a></p>
+<p><a href="https://modjor.de/17-4-anatomie-lang/">17.4 – A garatívek és idegi ellátásuk – Die Schlundbögen und ihre nervale Versorgung</a></p>
+<p><a href="https://modjor.de/17-5-anatomie-lang/">17.5 – A garatívek származékai az emberben – Die Abkömmlinge der Schlundbögen beim Menschen</a></p>
+<p><a href="https://modjor.de/17-5-1-anatomie-lang/">17.5.1 – A garatívek porcos és izmos származékai – Die knorpeligen und muskulären Abkömmlinge der Schlundbögen</a></p>
+<p><a href="https://modjor.de/17-5-2-anatomie-lang/">17.5.2 – A garattasakok származékai – Die Abkömmlinge der Schlundtaschen</a></p>
+<p><a href="https://modjor.de/17-5-3-anatomie-lang/">17.5.3 – A nyaki barázdák sorsa és a nyaki sipolyok – Das Schicksal der Schlundfurchen und die Halsfisteln</a></p>
+<p><a href="https://modjor.de/17-6-anatomie-lang/">17.6 – Az aortaívek átalakulása – Die Umbildung der Aortenbögen</a></p>
+<p><a href="https://modjor.de/17-7-anatomie-lang/">17.7 – A visszatérő gégeideg kerülőútja – Der Umweg des rückläufigen Kehlkopfnervs</a></p>
+<p><a href="https://modjor.de/17-8-anatomie-lang/">17.8 – Az állkapocsízület átalakulása a hüllőktől az emlősökig – Der Umbau des Kiefergelenks von den Reptilien zu den Säugern</a></p>
+<p><a href="https://modjor.de/17-9-anatomie-lang/">17.9 – A hallócsontocskák eredete – Die Herkunft der Gehörknöchelchen</a></p>
+<p><a href="https://modjor.de/17-10-anatomie-lang/">17.10 – Az uszonytól a végtagig – Von der Flosse zur Extremität</a></p>
+<p><a href="https://modjor.de/17-11-anatomie-lang/">17.11 – A szív fejlődése a gerincesek sorában – Die Herzentwicklung in der Wirbeltierreihe</a></p>
+<p><a href="https://modjor.de/17-12-anatomie-lang/">17.12 – Elővese, ősvese, utóvese – Vor-, Ur- und Nachniere</a></p>
+<p><a href="https://modjor.de/17-13-anatomie-lang/">17.13 – A rekeszizom és a here vándorlása – Die Wanderung von Zwerchfell und Hoden</a></p>
+<p><a href="https://modjor.de/17-14-anatomie-lang/">17.14 – Csökevényes szervek az emberi testben – Rudimentäre Organe im menschlichen Körper</a></p>
+<p><!-- Kapitel 18 --></p>
+<p><a href="https://modjor.de/18-anatomie-lang/">18 – Az ember különleges anatómiája – Die Sonderstellung des Menschen</a></p>
+<p><a href="https://modjor.de/18-1-anatomie-lang/">18.1 – Az ember helye a főemlősök között – Die Stellung des Menschen unter den Primaten</a></p>
+<p><a href="https://modjor.de/18-2-anatomie-lang/">18.2 – A két lábon járás és következményei – Der aufrechte Gang und seine Folgen</a></p>
+<p><a href="https://modjor.de/18-3-anatomie-lang/">18.3 – Az S alakú gerincoszlop kialakulása és terhelése – Entstehung und Belastung der S-förmigen Wirbelsäule</a></p>
+<p><a href="https://modjor.de/18-4-anatomie-lang/">18.4 – A medence átalakulása és a szülés szűk keresztmetszete – Der Umbau des Beckens und das geburtshilfliche Dilemma</a></p>
+<p><a href="https://modjor.de/18-5-anatomie-lang/">18.5 – A láb boltozatai és a lábszerkezet átalakulása – Die Fußgewölbe und der Umbau des Fußes</a></p>
+<p><a href="https://modjor.de/18-6-anatomie-lang/">18.6 – A kéz és a szembefordítható hüvelykujj – Hand und opponierbarer Daumen</a></p>
+<p><a href="https://modjor.de/18-7-anatomie-lang/">18.7 – A koponya, az agy térfogata és a beszéd szervei – Schädel, Hirnvolumen und die Organe der Sprache</a></p>
+<p><a href="https://modjor.de/18-7-1-anatomie-lang/">18.7.1 – A koponya átépülése: arckoponya és agykoponya aránya – Der Umbau des Schädels: das Verhältnis von Gesichts- und Hirnschädel</a></p>
+<p><a href="https://modjor.de/18-7-2-anatomie-lang/">18.7.2 – Az agy térfogatának növekedése és a koponyavarratok – Die Zunahme des Hirnvolumens und die Schädelnähte</a></p>
+<p><a href="https://modjor.de/18-7-3-anatomie-lang/">18.7.3 – A beszéd szervi feltételei – Die organischen Voraussetzungen der Sprache</a></p>
+<p><a href="https://modjor.de/18-8-anatomie-lang/">18.8 – A gége mély helyzete: előny és kockázat – Der tiefe Kehlkopfstand: Vorteil und Risiko</a></p>
+<p><a href="https://modjor.de/18-9-anatomie-lang/">18.9 – Gyenge pont: a lágyéksérv – Schwachstelle Leistenbruch</a></p>
+<p><a href="https://modjor.de/18-10-anatomie-lang/">18.10 – Gyenge pont: a visszértágulat és az aranyér – Schwachstelle Krampfadern und Hämorrhoiden</a></p>
+<p><a href="https://modjor.de/18-11-anatomie-lang/">18.11 – Gyenge pont: a porckorongsérv – Schwachstelle Bandscheibenvorfall</a></p>
+<p><a href="https://modjor.de/18-12-anatomie-lang/">18.12 – Gyenge pont: az orrmelléküregek kivezetőnyílásai – Schwachstelle Nasennebenhöhlen</a></p>
+<p><a href="https://modjor.de/18-13-anatomie-lang/">18.13 – További szerkezeti kompromisszumok – Weitere strukturelle Kompromisse</a></p>
+<div class="pc-home-link" style="margin-top: 25px;">
+        <a href="https://modjor.de/">« Home</a> | <a href="https://modjor.de/lesebuecher/">Zurück zu Lesebücher</a> | <a href="#top">↑ Hoch zum Seitenanfang</a>
+    </div>
+</div>
